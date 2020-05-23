@@ -35,8 +35,24 @@ set lazyredraw
 set visualbell
 set noerrorbells
 
+"-------------------------------- KEY BINDING --------------------------------
+" LEADER
+let mapleader = " "
+
+" Turn off hlsearch
+noremap <leader>n :set hlsearch!<CR>
+
 " Navigations
-no <C-h> <C-W>h
-no <C-j> <C-w>j
-no <C-k> <C-W>k
-no <C-l> <C-w>l
+noremap <C-h> <C-W>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-W>k
+noremap <C-l> <C-w>l
+
+" Move lines
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+
+" Windows keys
+vnoremap <C-c> "+y
+vnoremap <C-x> "+x
+noremap <C-v> "+gP
