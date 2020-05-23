@@ -14,6 +14,7 @@ Plug 'scrooloose/syntastic'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
+Plug 'terryma/vim-multiple-cursors'
 
 " Fuzzy Finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
