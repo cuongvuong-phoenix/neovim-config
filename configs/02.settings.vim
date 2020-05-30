@@ -11,12 +11,12 @@ set nobackup
 set nowritebackup
 set noswapfile
 set nowrap
-
-set encoding=UTF-8
 set mouse=a
 
-set history=1000
+set encoding=UTF-8
 set undolevels=1000
+
+set history=1000
 
 set incsearch
 set hlsearch
@@ -37,12 +37,13 @@ set noerrorbells
 
 "-------------------------------- KEY BINDING --------------------------------
 " LEADER
-let mapleader = " "
+noremap <Space> <Nop>
+let mapleader = "\<Space>"
 
 " Turn off hlsearch
 noremap <leader>n :set hlsearch!<CR>
 
-" Navigations
+" Navigate betweens pane.
 noremap <C-h> <C-W>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-W>k

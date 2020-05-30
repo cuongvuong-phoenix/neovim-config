@@ -13,9 +13,11 @@ let g:multi_cursor_quit_key            = '<Esc>'
 
 "-------------------------------- Nerd Tree --------------------------------
 " Ctrl + n to toggle Nerd tree
-map <C-n> :NERDTreeToggle<CR>
+map <C-b> :NERDTreeToggle<CR>
+
 " Auto close if only nerd tree left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " Change arrow symbol
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
