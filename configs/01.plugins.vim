@@ -10,12 +10,6 @@ Plug 'sheerun/vim-polyglot'
 " Syntax Checking
 Plug 'scrooloose/syntastic'
 
-" Utilities
-Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
-Plug 'terryma/vim-multiple-cursors'
-
 " Fuzzy Finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -34,7 +28,14 @@ let g:coc_global_extensions = [
   \ 'coc-json', 
   \ ]
 
+
+" Utilities
 Plug 'ryanoasis/vim-devicons'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
