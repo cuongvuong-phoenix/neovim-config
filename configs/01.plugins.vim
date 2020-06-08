@@ -20,13 +20,19 @@ Plug 'scrooloose/nerdtree'
 " Intellisense Engine
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = [
-  \ 'coc-snippets',
-  \ 'coc-pairs',
-  \ 'coc-tsserver',
-  \ 'coc-eslint', 
-  \ 'coc-prettier', 
-  \ 'coc-json', 
-  \ ]
+    \ 'coc-python',
+    \ 'coc-tsserver',
+    \ 'coc-vetur',
+    \ 'coc-flutter',
+    \ 'coc-tailwindcss',
+    \ 'coc-jest',
+    \ 'coc-yaml',
+    \ 'coc-prettier', 
+    \ 'coc-eslint', 
+    \ 'coc-json', 
+    \ 'coc-pairs',
+    \ 'coc-snippets',
+    \ ]
 
 
 " Utilities
@@ -36,16 +42,26 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-obsession'
 
 call plug#end()
 
-"---------------- SETTINGS ----------------
+"---------------- FAST SETTINGS ----------------
 " One Dark Theme
 colorscheme onedark
+set background=dark
+set termguicolors
 
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='onedark'
+
+let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#left_sep = " "
+" let g:airline#extensions#tabline#left_alt_sep = "|"
+" let g:airline#extensions#tabline#right_sep = ""
+" let g:airline#extensions#tabline#right_alt_sew = "|"
+let g:airline#extensions#tabline#formatter = "unique_tail"
 
 " Syntastic
 set statusline+=%#warningmsg#

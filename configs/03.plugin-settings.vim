@@ -18,6 +18,9 @@ map <C-b> :NERDTreeToggle<CR>
 " Auto close if only nerd tree left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Show hidden files
+let NERDTreeShowHidden = 1
+
 " Change arrow symbol
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'

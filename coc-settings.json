@@ -1,12 +1,12 @@
 {
-    "suggest.noselect": false,
-    "coc.preferences.formatOnSaveFiletypes": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescript.tsx",
-   "typescriptreact",
-        "json",
-        "vue"
-    ]
+  "suggest.noselect": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescript.tsx",
+    "typescriptreact",
+    "json",
+    "vue"
+  ]
 }
