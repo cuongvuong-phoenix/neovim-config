@@ -22,11 +22,13 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 
 ## Customized Keyboard Shortcuts
 
-> _*Essentials*_: Normal + Visual + Select + Operator-pending
+> *LHS* + *RHS*: Hold *LHS* first then press *RHS*.
 
-> *LHS* + *RHS*: Hold *LHS* first then press *RHS*
+> *LHS* → *RHS*: Press *LHS* first (don't need to hold) then press *RHS*.
 
-> *LHS* → *RHS*: Press *LHS* first (don't need to hold) then press *RHS*
+> _*Essentials*_: Normal + Visual + Select + Operator-pending.
+
+> *Can be recursived?*: Last key will be the start key of another keybinding (if present).
 
 ### Core
 
