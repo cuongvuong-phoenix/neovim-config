@@ -1,3 +1,11 @@
+"-------------------------------- Fugitive --------------------------------
+" Open Git status
+nmap <leader>Gs :Git<CR>
+" Keep the content of left side, abort right side
+nmap <leader>Gh :diffget //2<CR>
+" Keep the content of right side, abort left side
+nmap <leader>Gl :diffget //3<CR>
+
 "-------------------------------- Multi-Curosr --------------------------------
 let g:multi_cursor_use_default_mapping=0
 

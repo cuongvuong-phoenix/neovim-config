@@ -1,21 +1,40 @@
 call plug#begin('~/.local/share/nvim/plugged/')
 
-" Theme
+" Themes
 Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Syntax Highlighting
 Plug 'sheerun/vim-polyglot' 
+
 " Syntax Checking
 Plug 'scrooloose/syntastic'
 
-" Fuzzy Finder
+" Git wrapper
+Plug 'tpope/vim-fugitive'
+
+" Files Finder
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " Files Explorer
 Plug 'scrooloose/nerdtree'
+
+" Icon for NERDTree
+Plug 'ryanoasis/vim-devicons'
+
+" Auto pairing (), {}, [],...
+Plug 'jiangmiao/auto-pairs'
+
+" Multiple cursors
+Plug 'terryma/vim-multiple-cursors'
+
+" Comment area
+Plug 'scrooloose/nerdcommenter'
+
+" Auto save session
+Plug 'tpope/vim-obsession'
 
 " Intellisense Engine
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -33,16 +52,6 @@ let g:coc_global_extensions = [
     \ 'coc-pairs',
     \ 'coc-snippets',
     \ ]
-
-
-" Utilities
-Plug 'ryanoasis/vim-devicons'
-Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'scrooloose/nerdcommenter'
-Plug 'tpope/vim-obsession'
 
 call plug#end()
 
