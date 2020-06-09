@@ -38,10 +38,10 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | `Space` → `n`           | Normal                   | Toggle _hlsearch_                        |        :x:         |
 | `Space` → `-`           | Normal                   | Split into panes _horizontally_          | :heavy_check_mark: |
 | `Space` → `_`           | Normal                   | Split into panes _vertically_            | :heavy_check_mark: |
-| `Ctrl` + `h`            | Normal                   | Navigate to the _Left pane_              |        :x:         |
-| `Ctrl` + `j`            | Normal                   | Navigate to the _Lower pane_             |        :x:         |
-| `Ctrl` + `k`            | Normal                   | Navigate to the _Upper pane_             |        :x:         |
-| `Ctrl` + `l`            | Normal                   | Navigate to the _Right pane_             |        :x:         |
+| `Ctrl` + `h`            | Normal                   | Navigate to the _left pane_              |        :x:         |
+| `Ctrl` + `j`            | Normal                   | Navigate to the _lower pane_             |        :x:         |
+| `Ctrl` + `k`            | Normal                   | Navigate to the _upper pane_             |        :x:         |
+| `Ctrl` + `l`            | Normal                   | Navigate to the _right pane_             |        :x:         |
 | `Space` → `Shift` + `h` | _Essentials_             | Resize pane to the _left_                | :heavy_check_mark: |
 | `Space` → `Shift` + `j` | _Essentials_             | Resize pane to the _lower side_          | :heavy_check_mark: |
 | `Space` → `Shift` + `k` | _Essentials_             | Resize pane to the _upper side_          | :heavy_check_mark: |
@@ -82,11 +82,11 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | `Shift` + `Tab`     | Insert _(Popup Menu is visible)_ | Move to _previous suggestion_                |        :x:         |
 | `Enter`             | Insert _(Popup Menu is visible)_ | Select current suggestion                    |        :x:         |
 | `Ctrl` + `Space`    | Insert                           | Open _Popup Menu_ if CoC find any suggestion |        :x:         |
-| `g` → `d`           | Normal                           | Go to _Definition_                           | :heavy_check_mark: |
-| `g` → `y`           | Normal                           | Go to _Type's definition_                    | :heavy_check_mark: |
-| `g` → `i`           | Normal                           | Go to _Implementation_                       | :heavy_check_mark: |
-| `g` → `r`           | Normal                           | Go to _References_                           | :heavy_check_mark: |
-| `g` → `h`           | Normal                           | Open Documentation                           |        :x:         |
+| `g` → `d`           | Normal                           | Go to _definition_                           | :heavy_check_mark: |
+| `g` → `y`           | Normal                           | Go to _type's definition_                    | :heavy_check_mark: |
+| `g` → `i`           | Normal                           | Go to _implementation_                       | :heavy_check_mark: |
+| `g` → `r`           | Normal                           | Go to _references_                           | :heavy_check_mark: |
+| `g` → `h`           | Normal                           | Open documentation                           |        :x:         |
 | `Space` → `c` → `r` | Normal                           | Restart CoC's server                         |        :x:         |
 | `Space` → `c` → `f` | Normal + Visual + Select         | Format selected area                         | :heavy_check_mark: |
 | `Space` → `c` → `a` | Normal + Visual + Select         | Run selected codes's action for current file | :heavy_check_mark: |
@@ -98,11 +98,11 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | `Ctrl` + `p`    | Normal             | Start fzf to find files/contents         |     :x:     |
 | `Space` → `b`   | Normal             | Show fzf's buffers                       |     :x:     |
 | `Space` → `h`   | Normal             | Show fzf's histories                     |     :x:     |
-| `Ctrl` + `t`    | _(fzf is running)_ | Open selected files as vim's tabs        |     :x:     |
-| `Ctrl` + `j`    | _(fzf is running)_ | Navigate to _upper file_                 |     :x:     |
-| `Ctrl` + `k`    | _(fzf is running)_ | Navigate to _lower file_                 |     :x:     |
-| `Tab`           | _(fzf is running)_ | Multi-select _current file & lower file_ |     :x:     |
-| `Shift` + `Tab` | _(fzf is running)_ | Multi-select _current file & upper_      |     :x:     |
+| `Ctrl` + `t`    | _(FzF is running)_ | Open selected files as vim's tabs        |     :x:     |
+| `Ctrl` + `j`    | _(FzF is running)_ | Navigate to _upper file_                 |     :x:     |
+| `Ctrl` + `k`    | _(FzF is running)_ | Navigate to _lower file_                 |     :x:     |
+| `Tab`           | _(FzF is running)_ | Multi-select _current file & lower file_ |     :x:     |
+| `Shift` + `Tab` | _(FzF is running)_ | Multi-select _current file & upper_      |     :x:     |
 
 #### [Nerd Commenter](https://github.com/preservim/nerdcommenter)
 
