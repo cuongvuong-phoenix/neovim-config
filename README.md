@@ -82,10 +82,10 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | `Shift` + `Tab`     | Insert _(Popup Menu is visible)_ | Move to _previous suggestion_                |        :x:         |
 | `Enter`             | Insert _(Popup Menu is visible)_ | Select current suggestion                    |        :x:         |
 | `Ctrl` + `Space`    | Insert                           | Open _Popup Menu_ if CoC find any suggestion |        :x:         |
-| `g` → `d`           | Normal                           | Go to _definition_                           | :heavy_check_mark: |
-| `g` → `y`           | Normal                           | Go to _type's definition_                    | :heavy_check_mark: |
-| `g` → `i`           | Normal                           | Go to _implementation_                       | :heavy_check_mark: |
-| `g` → `r`           | Normal                           | Go to _references_                           | :heavy_check_mark: |
+| `g` → `d`           | Normal                           | Go to _Definition_                           | :heavy_check_mark: |
+| `g` → `y`           | Normal                           | Go to _Type's definition_                    | :heavy_check_mark: |
+| `g` → `i`           | Normal                           | Go to _Implementation_                       | :heavy_check_mark: |
+| `g` → `r`           | Normal                           | Go to _References_                           | :heavy_check_mark: |
 | `g` → `h`           | Normal                           | Open Documentation                           |        :x:         |
 | `Space` → `c` → `r` | Normal                           | Restart CoC's server                         |        :x:         |
 | `Space` → `c` → `f` | Normal + Visual + Select         | Format selected area                         | :heavy_check_mark: |
