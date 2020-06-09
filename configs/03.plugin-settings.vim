@@ -57,7 +57,7 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<C-h>"
 " Enter to confirm completion
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 " Use <c-space> to trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
+inoremap <silent><expr> <C-space> coc#refresh()
 
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
@@ -77,7 +77,7 @@ endfunction
 nnoremap <silent> gh :call <SID>show_documentation()<CR>
 
 " Restart when some extensions get wonky
-nnoremap <silent> <leader>cR :<C-u>CocRestart<CR> 
+nnoremap <silent> <leader>cr :<C-u>CocRestart<CR> 
 
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
