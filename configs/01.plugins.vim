@@ -11,7 +11,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/syntastic'
 
 " Fuzzy Finder
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " Files Explorer
@@ -47,6 +47,10 @@ Plug 'tpope/vim-obsession'
 call plug#end()
 
 "---------------- FAST SETTINGS ----------------
+" Fix colors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum" 
+
 " One Dark Theme
 colorscheme onedark
 set background=dark
