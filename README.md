@@ -22,17 +22,17 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 
 ## Customized Keyboard Shortcuts
 
-> *LHS* + *RHS*: Hold *LHS* first then press *RHS*.
+> _LHS_ + _RHS_: Hold _LHS_ first then press _RHS_.
 
-> *LHS* → *RHS*: Press *LHS* first (don't need to hold) then press *RHS*.
+> _LHS_ → _RHS_: Press _LHS_ first (don't need to hold) then press _RHS_.
 
 > _*Essentials*_: Normal + Visual + Select + Operator-pending.
 
-> *Can be recursived?*: Last key will be the start key of another keybinding (if present).
+> _Recursived?_: Last key will be the start key of another keybinding (if present).
 
 ### Core
 
-| Key binding             | Mode                     | Command                                  | Can be recursived? |
+| Key binding             | Mode                     | Command                                  |    Recursived?     |
 | ----------------------- | ------------------------ | ---------------------------------------- | :----------------: |
 | `Space`                 | _Essentials_             | Vim's _leader_ key                       |        :x:         |
 | `Space` → `n`           | Normal                   | Toggle _hlsearch_                        |        :x:         |
@@ -58,25 +58,25 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 
 #### [Multiple Cursors](https://github.com/terryma/vim-multiple-cursors)
 
-| Key binding                 | Mode (Condition) | Command                    | Can be recursived? |
-| --------------------------- | ---------------- | -------------------------- | :----------------: |
-| `Alt` + `d`                 | _Essentials_     | Select _next word_         |        :x:         |
-| `g` → `Alt` + `d`           | _Essentials_     | Select _next key_          |        :x:         |
-| `Space` → `Alt` + `d`       | _Essentials_     | Select _all words_         |        :x:         |
-| `Space` → `g` → `Alt` + `d` | _Essentials_     | Select _all keys_          |        :x:         |
-| `Alt` + `u`                 | _Essentials_     | Select _previous word/key_ |        :x:         |
-| `Alt` + `x`                 | _Essentials_     | Skip current word          |        :x:         |
-| `Esc`                       | _Essentials_     | Quit multi-cursor          |        :x:         |
+| Key binding                 | Mode (Condition) | Command                    | Recursived? |
+| --------------------------- | ---------------- | -------------------------- | :---------: |
+| `Alt` + `d`                 | _Essentials_     | Select _next word_         |     :x:     |
+| `g` → `Alt` + `d`           | _Essentials_     | Select _next key_          |     :x:     |
+| `Space` → `Alt` + `d`       | _Essentials_     | Select _all words_         |     :x:     |
+| `Space` → `g` → `Alt` + `d` | _Essentials_     | Select _all keys_          |     :x:     |
+| `Alt` + `u`                 | _Essentials_     | Select _previous word/key_ |     :x:     |
+| `Alt` + `x`                 | _Essentials_     | Skip current word          |     :x:     |
+| `Esc`                       | _Essentials_     | Quit multi-cursor          |     :x:     |
 
 #### [Nerd Tree](https://github.com/preservim/nerdtree)
 
-| Key binding  | Mode (Condition) | Command                   | Can be recursived? |
+| Key binding  | Mode (Condition) | Command                   |    Recursived?     |
 | ------------ | ---------------- | ------------------------- | :----------------: |
 | `Ctrl` + `b` | _Essentials_     | Toggle Nerd Tree at `pwd` | :heavy_check_mark: |
 
 #### [Conquer of Completion](https://github.com/neoclide/coc.nvim)
 
-| Key binding         | Mode (Condition)                 | Command                                      | Can be recursived? |
+| Key binding         | Mode (Condition)                 | Command                                      |    Recursived?     |
 | ------------------- | -------------------------------- | -------------------------------------------- | :----------------: |
 | `Tab`               | Insert _(Popup Menu is visible)_ | Move to _next suggestion_                    |        :x:         |
 | `Shift` + `Tab`     | Insert _(Popup Menu is visible)_ | Move to _previous suggestion_                |        :x:         |
@@ -93,19 +93,19 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 
 #### [Fuzzy Finder](https://github.com/junegunn/fzf.vim)
 
-| Key binding     | Mode (Condition)   | Command                                  | Can be recursived? |
-| --------------- | ------------------ | ---------------------------------------- | :----------------: |
-| `Ctrl` + `p`    | Normal             | Start fzf to find files/contents         |        :x:         |
-| `Space` → `b`   | Normal             | Show fzf's buffers                       |        :x:         |
-| `Space` → `h`   | Normal             | Show fzf's histories                     |        :x:         |
-| `Ctrl` + `t`    | _(fzf is running)_ | Open selected files as vim's tabs        |        :x:         |
-| `Ctrl` + `j`    | _(fzf is running)_ | Navigate to _upper file_                 |        :x:         |
-| `Ctrl` + `k`    | _(fzf is running)_ | Navigate to _lower file_                 |        :x:         |
-| `Tab`           | _(fzf is running)_ | Multi-select _current file & lower file_ |        :x:         |
-| `Shift` + `Tab` | _(fzf is running)_ | Multi-select _current file & upper_      |        :x:         |
+| Key binding     | Mode (Condition)   | Command                                  | Recursived? |
+| --------------- | ------------------ | ---------------------------------------- | :---------: |
+| `Ctrl` + `p`    | Normal             | Start fzf to find files/contents         |     :x:     |
+| `Space` → `b`   | Normal             | Show fzf's buffers                       |     :x:     |
+| `Space` → `h`   | Normal             | Show fzf's histories                     |     :x:     |
+| `Ctrl` + `t`    | _(fzf is running)_ | Open selected files as vim's tabs        |     :x:     |
+| `Ctrl` + `j`    | _(fzf is running)_ | Navigate to _upper file_                 |     :x:     |
+| `Ctrl` + `k`    | _(fzf is running)_ | Navigate to _lower file_                 |     :x:     |
+| `Tab`           | _(fzf is running)_ | Multi-select _current file & lower file_ |     :x:     |
+| `Shift` + `Tab` | _(fzf is running)_ | Multi-select _current file & upper_      |     :x:     |
 
 #### [Nerd Commenter](https://github.com/preservim/nerdcommenter)
 
-| Key binding  | Mode (Condition)         | Command                          | Can be recursived? |
+| Key binding  | Mode (Condition)         | Command                          |    Recursived?     |
 | ------------ | ------------------------ | -------------------------------- | :----------------: |
 | `Ctrl` + `/` | Normal + Visual + Select | Toggle comment for selected area | :heavy_check_mark: |
