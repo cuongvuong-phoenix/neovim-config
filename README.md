@@ -6,6 +6,7 @@
 2. [Customized Keyboard Shortcuts](#customized-keyboard-shortcuts)
    - [Core](#core)
    - [Plugins/Extensions](#pluginsextensions)
+     - [Fugitive](#fugitive)
      - [Multiple Cursors](#multiple-cursors)
      - [Nerd Tree](#nerd-tree)
      - [Conquer of Completion](#conquer-of-completion)
@@ -24,7 +25,7 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 
 > _LHS_ + _RHS_: Hold _LHS_ first then press _RHS_.
 
-> _LHS_ → _RHS_: Press _LHS_ first (don't need to hold) then press _RHS_.
+> _LHS_ → _RHS_: Press _LHS_ first (don't need to hold, but has timeout) then press _RHS_.
 
 > _*Essentials*_: Normal + Visual + Select + Operator-pending.
 
@@ -35,7 +36,7 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | Key binding             | Mode                     | Command                                  |       Recursived?       |
 | ----------------------- | ------------------------ | ---------------------------------------- | :---------------------: |
 | `Space`                 | _Essentials_             | Vim's _leader_ key                       |  :black_square_button:  |
-| `Space` → `n`           | Normal                   | Toggle _hlsearch_                        |  :black_square_button:  |
+| `Space` → `n`           | Normal                   | Toggle `hlsearch`                        |  :black_square_button:  |
 | `Space` → `-`           | Normal                   | Split into panes _horizontally_          | :ballot_box_with_check: |
 | `Space` → `_`           | Normal                   | Split into panes _vertically_            | :ballot_box_with_check: |
 | `Ctrl` + `h`            | Normal                   | Navigate to the _left pane_              |  :black_square_button:  |
@@ -55,6 +56,17 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | `Ctlr` + `v`            | _Essentials_             | Paste from system's clipboard            |  :black_square_button:  |
 
 ### Plugins/Extensions
+
+#### [Fugitive](https://github.com/tpope/vim-fugitive)
+
+| Key binding                   | Mode (Condition)                   | Command                         |       Recursived?       |
+| ----------------------------- | ---------------------------------- | ------------------------------- | :---------------------: |
+| `Space` → `Shift` + `g` → `s` | Normal                             | Open `git status` by _Fugitive_ | :ballot_box_with_check: |
+| `s`                           | _(Fugitive git status)_            | Mark file(s) as _Staged_        |  :black_square_button:  |
+| `u`                           | _(Fugitive git status)_            | Mark file(s) as _Unstaged_      |  :black_square_button:  |
+| `d` → `v`                     | _(Fugitive git status)_            | Open files to solve conflicts   |  :black_square_button:  |
+| `Space` → `Shift` + `g` → `h` | Normal _(Fugitive merge conflict)_ | Keep contents of _left side_    | :ballot_box_with_check: |
+| `Space` → `Shift` + `g` → `l` | Normal _(Fugitive merge conflict)_ | Keep contents of _right side_   | :ballot_box_with_check: |
 
 #### [Multiple Cursors](https://github.com/terryma/vim-multiple-cursors)
 
