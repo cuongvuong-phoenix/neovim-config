@@ -45,6 +45,17 @@ set updatetime=300
 
 set shortmess+=c
 
+" Check if previous column is space
+function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1] =~# '\s'
+endfunction
+
+inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : (<SID>check_back_space() ? "\<Tab>" : coc#refresh())
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+" Enter to confirm completion
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
@@ -55,8 +66,6 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Show documentation
-nnoremap <silent> gh :call <SID>show_documentation()<CR>
-
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
@@ -64,6 +73,8 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+nnoremap <silent> gh :call <SID>show_documentation()<CR>
 
 " Restart when some extensions get wonky
 nnoremap <silent> <leader>cR :<C-u>CocRestart<CR> 
