@@ -54,7 +54,7 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | `Alt` + `k`             | Normal + Visual + Select | Move current/selected _area above_       | :white_check_mark: |
 | `Ctlr` + `c`            | Visual + Select          | Copy selected area to system's clipboard | :white_check_mark: |
 | `Ctlr` + `x`            | Visual + Select          | Cut selected area to system's clipboard  | :white_check_mark: |
-| `'` + `"`               | _Essentials_             | Jump to position that last time quitted  | :white_check_mark: |
+| `'` + `"`               | _Essentials_             | Jump to position where last time quitted  | :white_check_mark: |
 
 ### Plugins/Extensions
 
