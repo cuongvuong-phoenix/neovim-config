@@ -60,75 +60,75 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 
 #### [Conquer of Completion (CoC)](https://github.com/neoclide/coc.nvim)
 
-| Key binding         | Mode (Condition)                     | Command                                          |    Recursived?     |
-| ------------------- | ------------------------------------ | ------------------------------------------------ | :----------------: |
-| `Tab`               | Insert _(**Popup Menu** is visible)_ | Move to _next suggestion_                        | :white_check_mark: |
-| `Shift` + `Tab`     | Insert _(**Popup Menu** is visible)_ | Move to _previous suggestion_                    | :white_check_mark: |
-| `Enter`             | Insert _(**Popup Menu** is visible)_ | Select current suggestion                        | :white_check_mark: |
-| `Ctrl` + `Space`    | Insert                               | Open **_Popup Menu_** if CoC find any suggestion | :white_check_mark: |
-| `g` → `d`           | Normal                               | Go to _definition_                               | :heavy_check_mark: |
-| `g` → `y`           | Normal                               | Go to _type's definition_                        | :heavy_check_mark: |
-| `g` → `i`           | Normal                               | Go to _implementation_                           | :heavy_check_mark: |
-| `g` → `r`           | Normal                               | Go to _references_                               | :heavy_check_mark: |
-| `g` → `h`           | Normal                               | Open documentation                               | :white_check_mark: |
-| `Space` → `c` → `r` | Normal                               | Restart CoC's server                             | :white_check_mark: |
-| `Space` → `c` → `f` | Normal + Visual + Select             | Format selected area                             | :heavy_check_mark: |
-| `Space` → `c` → `a` | Normal + Visual + Select             | Run selected codes's action for current file     | :heavy_check_mark: |
+| Key binding         | Mode (Condition)                 | Command                                                |    Recursived?     |
+| ------------------- | -------------------------------- | ------------------------------------------------------ | :----------------: |
+| `Tab`               | Insert (_Popup Menu_ is visible) | Move to _next suggestion_                              | :white_check_mark: |
+| `Shift` + `Tab`     | Insert (_Popup Menu_ is visible) | Move to _previous suggestion_                          | :white_check_mark: |
+| `Enter`             | Insert (_Popup Menu_ is visible) | Select current suggestion                              | :white_check_mark: |
+| `Ctrl` + `Space`    | Insert                           | Open **_Popup Menu_** if **_CoC_** find any suggestion | :white_check_mark: |
+| `g` → `d`           | Normal                           | Go to _definition_                                     | :heavy_check_mark: |
+| `g` → `y`           | Normal                           | Go to _type's definition_                              | :heavy_check_mark: |
+| `g` → `i`           | Normal                           | Go to _implementation_                                 | :heavy_check_mark: |
+| `g` → `r`           | Normal                           | Go to _references_                                     | :heavy_check_mark: |
+| `g` → `h`           | Normal                           | Open documentation                                     | :white_check_mark: |
+| `Space` → `c` → `r` | Normal                           | Restart **_CoC_**'s server                             | :white_check_mark: |
+| `Space` → `c` → `f` | Normal + Visual + Select         | Format selected area                                   | :heavy_check_mark: |
+| `Space` → `c` → `a` | Normal + Visual + Select         | Run selected codes's action for current file           | :heavy_check_mark: |
 
 #### [CoC Explorer](https://github.com/weirongxu/coc-explorer)
 
-| Key binding   | Mode (Condition)                | Command                                 |    Recursived?     |
-| ------------- | ------------------------------- | --------------------------------------- | :----------------: |
-| `Ctrl` + `b`  | Normal                          | Open **_CoC Explorer_**                 | :white_check_mark: |
-| `?`           | _(**CoC Explorer** is showing)_ | Open _help_                             | :white_check_mark: |
-| `*`           | _(**CoC Explorer** is showing)_ | Toggle Selection                        | :white_check_mark: |
-| `.`           | _(**CoC Explorer** is showing)_ | Toggle hidden                           | :white_check_mark: |
-| `Shift` + `r` | _(**CoC Explorer** is showing)_ | Refresh                                 | :white_check_mark: |
-| `q`           | _(**CoC Explorer** is showing)_ | Quit                                    | :white_check_mark: |
-| `Esc`         | _(**CoC Explorer** is showing)_ | Esc                                     | :white_check_mark: |
-| `h`           | _(**CoC Explorer** is showing)_ | Collapse folder                         | :white_check_mark: |
-| `l`           | _(**CoC Explorer** is showing)_ | Expand folder if possible, else open    | :white_check_mark: |
-| `r` → `h`     | _(**CoC Explorer** is showing)_ | Collapse recursively                    | :white_check_mark: |
-| `r` → `l`     | _(**CoC Explorer** is showing)_ | Expand recursively                      | :white_check_mark: |
-| `Backspace`   | _(**CoC Explorer** is showing)_ | Go to parent directory                  | :white_check_mark: |
-| `Enter`       | _(**CoC Explorer** is showing)_ | `cd` to folder is expandable, else open | :white_check_mark: |
-| `y`           | _(**CoC Explorer** is showing)_ | Copy file's path                        | :white_check_mark: |
-| `Shift` + `y` | _(**CoC Explorer** is showing)_ | Copy file's name                        | :white_check_mark: |
-| `c`           | _(**CoC Explorer** is showing)_ | Copy selected files                     | :white_check_mark: |
-| `x`           | _(**CoC Explorer** is showing)_ | Cut selected files                      | :white_check_mark: |
-| `p`           | _(**CoC Explorer** is showing)_ | Paste selected files                    | :white_check_mark: |
-| `d`           | _(**CoC Explorer** is showing)_ | Delete selected files (to trash)        | :white_check_mark: |
-| `Shift` + `d` | _(**CoC Explorer** is showing)_ | Delete selected files (forever)         | :white_check_mark: |
-| `a`           | _(**CoC Explorer** is showing)_ | Add (create) new file                   | :white_check_mark: |
-| `Shift` + `a` | _(**CoC Explorer** is showing)_ | Add (create) new folder                 | :white_check_mark: |
-| `r`           | _(**CoC Explorer** is showing)_ | Rename selected file/folder             | :white_check_mark: |
-| `f`           | _(**CoC Explorer** is showing)_ | Search for files                        | :white_check_mark: |
-| `Shift` + `f` | _(**CoC Explorer** is showing)_ | Search for files recursively            | :white_check_mark: |
-| `X`           | _(**CoC Explorer** is showing)_ | Execute System's command                | :white_check_mark: |
+| Key binding   | Mode (Condition)            | Command                                 |    Recursived?     |
+| ------------- | --------------------------- | --------------------------------------- | :----------------: |
+| `Ctrl` + `b`  | Normal                      | Open **_CoC Explorer_**                 | :white_check_mark: |
+| `?`           | (_CoC Explorer_ is showing) | Open _help_                             | :white_check_mark: |
+| `*`           | (_CoC Explorer_ is showing) | Toggle Selection                        | :white_check_mark: |
+| `.`           | (_CoC Explorer_ is showing) | Toggle hidden                           | :white_check_mark: |
+| `Shift` + `r` | (_CoC Explorer_ is showing) | Refresh                                 | :white_check_mark: |
+| `q`           | (_CoC Explorer_ is showing) | Quit                                    | :white_check_mark: |
+| `Esc`         | (_CoC Explorer_ is showing) | Esc                                     | :white_check_mark: |
+| `h`           | (_CoC Explorer_ is showing) | Collapse folder                         | :white_check_mark: |
+| `l`           | (_CoC Explorer_ is showing) | Expand folder if possible, else open    | :white_check_mark: |
+| `r` → `h`     | (_CoC Explorer_ is showing) | Collapse recursively                    | :white_check_mark: |
+| `r` → `l`     | (_CoC Explorer_ is showing) | Expand recursively                      | :white_check_mark: |
+| `Backspace`   | (_CoC Explorer_ is showing) | Go to parent directory                  | :white_check_mark: |
+| `Enter`       | (_CoC Explorer_ is showing) | `cd` to folder is expandable, else open | :white_check_mark: |
+| `y`           | (_CoC Explorer_ is showing) | Copy file's path                        | :white_check_mark: |
+| `Shift` + `y` | (_CoC Explorer_ is showing) | Copy file's name                        | :white_check_mark: |
+| `c`           | (_CoC Explorer_ is showing) | Copy selected files                     | :white_check_mark: |
+| `x`           | (_CoC Explorer_ is showing) | Cut selected files                      | :white_check_mark: |
+| `p`           | (_CoC Explorer_ is showing) | Paste selected files                    | :white_check_mark: |
+| `d`           | (_CoC Explorer_ is showing) | Delete selected files (to trash)        | :white_check_mark: |
+| `Shift` + `d` | (_CoC Explorer_ is showing) | Delete selected files (forever)         | :white_check_mark: |
+| `a`           | (_CoC Explorer_ is showing) | Add (create) new file                   | :white_check_mark: |
+| `Shift` + `a` | (_CoC Explorer_ is showing) | Add (create) new folder                 | :white_check_mark: |
+| `r`           | (_CoC Explorer_ is showing) | Rename selected file/folder             | :white_check_mark: |
+| `f`           | (_CoC Explorer_ is showing) | Search for files                        | :white_check_mark: |
+| `Shift` + `f` | (_CoC Explorer_ is showing) | Search for files recursively            | :white_check_mark: |
+| `X`           | (_CoC Explorer_ is showing) | Execute System's command                | :white_check_mark: |
 
 #### [Fuzzy Finder](https://github.com/junegunn/fzf.vim)
 
-| Key binding     | Mode (Condition)       | Command                                  |    Recursived?     |
-| --------------- | ---------------------- | ---------------------------------------- | :----------------: |
-| `Ctrl` + `p`    | Normal                 | Start **_FzF_** to find files/contents   | :white_check_mark: |
-| `Space` → `b`   | Normal                 | Show **_FzF_**'s buffers                 | :white_check_mark: |
-| `Space` → `h`   | Normal                 | Show **_FzF_**'s histories               | :white_check_mark: |
-| `Ctrl` + `t`    | _(**FzF** is running)_ | Open selected files as vim's tabs        | :white_check_mark: |
-| `Ctrl` + `j`    | _(**FzF** is running)_ | Navigate to _upper file_                 | :white_check_mark: |
-| `Ctrl` + `k`    | _(**FzF** is running)_ | Navigate to _lower file_                 | :white_check_mark: |
-| `Tab`           | _(**FzF** is running)_ | Multi-select _current file & lower file_ | :white_check_mark: |
-| `Shift` + `Tab` | _(**FzF** is running)_ | Multi-select _current file & upper_      | :white_check_mark: |
+| Key binding     | Mode (Condition)   | Command                                  |    Recursived?     |
+| --------------- | ------------------ | ---------------------------------------- | :----------------: |
+| `Ctrl` + `p`    | Normal             | Start **_FzF_** to find files/contents   | :white_check_mark: |
+| `Space` → `b`   | Normal             | Show **_FzF_**'s buffers                 | :white_check_mark: |
+| `Space` → `h`   | Normal             | Show **_FzF_**'s histories               | :white_check_mark: |
+| `Ctrl` + `t`    | (_FzF_ is running) | Open selected files as vim's tabs        | :white_check_mark: |
+| `Ctrl` + `j`    | (_FzF_ is running) | Navigate to _upper file_                 | :white_check_mark: |
+| `Ctrl` + `k`    | (_FzF_ is running) | Navigate to _lower file_                 | :white_check_mark: |
+| `Tab`           | (_FzF_ is running) | Multi-select _current file & lower file_ | :white_check_mark: |
+| `Shift` + `Tab` | (_FzF_ is running) | Multi-select _current file & upper_      | :white_check_mark: |
 
 #### [Fugitive](https://github.com/tpope/vim-fugitive)
 
-| Key binding                   | Mode (Condition)                       | Command                             |    Recursived?     |
-| ----------------------------- | -------------------------------------- | ----------------------------------- | :----------------: |
-| `Space` → `Shift` + `g` → `s` | Normal                                 | Open `git status` by **_Fugitive_** | :heavy_check_mark: |
-| `s`                           | _(**Fugitive** git status)_            | Mark file(s) as _Staged_            | :white_check_mark: |
-| `u`                           | _(**Fugitive** git status)_            | Mark file(s) as _Unstaged_          | :white_check_mark: |
-| `d` → `v`                     | _(**Fugitive** git status)_            | Open files to solve conflicts       | :white_check_mark: |
-| `Space` → `Shift` + `g` → `h` | Normal _(**Fugitive** merge conflict)_ | Keep contents of _left side_        | :heavy_check_mark: |
-| `Space` → `Shift` + `g` → `l` | Normal _(**Fugitive** merge conflict)_ | Keep contents of _right side_       | :heavy_check_mark: |
+| Key binding                   | Mode (Condition)                   | Command                             |    Recursived?     |
+| ----------------------------- | ---------------------------------- | ----------------------------------- | :----------------: |
+| `Space` → `Shift` + `g` → `s` | Normal                             | Open `git status` by **_Fugitive_** | :heavy_check_mark: |
+| `s`                           | (_Fugitive_ git status)            | Mark file(s) as _Staged_            | :white_check_mark: |
+| `u`                           | (_Fugitive_ git status)            | Mark file(s) as _Unstaged_          | :white_check_mark: |
+| `d` → `v`                     | (_Fugitive_ git status)            | Open files to solve conflicts       | :white_check_mark: |
+| `Space` → `Shift` + `g` → `h` | Normal (_Fugitive_ merge conflict) | Keep contents of _left side_        | :heavy_check_mark: |
+| `Space` → `Shift` + `g` → `l` | Normal (_Fugitive_ merge conflict) | Keep contents of _right side_       | :heavy_check_mark: |
 
 #### [Multiple Cursors](https://github.com/terryma/vim-multiple-cursors)
 
