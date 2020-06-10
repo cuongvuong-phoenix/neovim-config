@@ -1,47 +1,23 @@
-"-------------------------------- Fugitive --------------------------------
-" Open Git status
-nmap <leader>Gs :Git<CR>
-" Keep the content of left side, abort right side
-nmap <leader>Gh :diffget //2<CR>
-" Keep the content of right side, abort left side
-nmap <leader>Gl :diffget //3<CR>
+"-------------------------------- Airline --------------------------------
+let g:airline_powerline_fonts = 1
+let g:airline_theme='onedark'
 
-"-------------------------------- Multi-Curosr --------------------------------
-let g:multi_cursor_use_default_mapping=0
+let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#left_sep = " "
+" let g:airline#extensions#tabline#left_alt_sep = "|"
+" let g:airline#extensions#tabline#right_sep = ""
+" let g:airline#extensions#tabline#right_alt_sew = "|"
+let g:airline#extensions#tabline#formatter = "unique_tail"
 
-" Default mapping
-let g:multi_cursor_start_word_key      = '<A-d>'
-let g:multi_cursor_select_all_word_key = '<leader><A-d>'
-let g:multi_cursor_start_key           = 'g<A-d>'
-let g:multi_cursor_select_all_key      = 'g<leader><A-d>'
-let g:multi_cursor_next_key            = '<A-d>'
-let g:multi_cursor_prev_key            = '<A-u>'
-let g:multi_cursor_skip_key            = '<A-x>'
-let g:multi_cursor_quit_key            = '<Esc>'
+"-------------------------------- Syntastic --------------------------------
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
-"-------------------------------- Nerd Tree --------------------------------
-" Ctrl + n to toggle Nerd tree
-map <C-b> :NERDTreeToggle<CR>
-
-" Auto close if only nerd tree left
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" Show hidden files
-let NERDTreeShowHidden = 1
-
-" Change arrow symbol
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
-
-let g:NERDTreePatternMatchHighlightFullName = 1
-let NERDTreeAutoDeleteBuffer = 1
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-let g:NERDDefaultAlign = 'left'
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
-let g:NERDTreeChDirMode=2
-let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', 'node_modules']
-let g:NERDTreeShowBookmarks=1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 "-------------------------------- CoC --------------------------------
 set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup "
@@ -98,6 +74,9 @@ vmap <leader>cf  <Plug>(coc-format-selected)
 vmap <leader>ca  <Plug>(coc-codeaction-selected)
 nmap <leader>ca  <Plug>(coc-codeaction-selected)
 
+"-------------------------------- coc-explorer --------------------------------
+nmap <C-b> :CocCommand explorer --toggle <CR>
+
 "-------------------------------- FzF --------------------------------
 nnoremap <C-p> :Files<CR>
 nnoremap <Leader>b :Buffers<CR>
@@ -137,6 +116,27 @@ command! -bang -nargs=* Rg
   \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
 
+"-------------------------------- Fugitive --------------------------------
+" Open Git status
+nmap <leader>Gs :Git<CR>
+" Keep the content of left side, abort right side
+nmap <leader>Gh :diffget //2<CR>
+" Keep the content of right side, abort left side
+nmap <leader>Gl :diffget //3<CR>
+
+"-------------------------------- Multi-Curosr --------------------------------
+let g:multi_cursor_use_default_mapping=0
+
+" Default mapping
+let g:multi_cursor_start_word_key      = '<A-d>'
+let g:multi_cursor_select_all_word_key = '<leader><A-d>'
+let g:multi_cursor_start_key           = 'g<A-d>'
+let g:multi_cursor_select_all_key      = 'g<leader><A-d>'
+let g:multi_cursor_next_key            = '<A-d>'
+let g:multi_cursor_prev_key            = '<A-u>'
+let g:multi_cursor_skip_key            = '<A-x>'
+let g:multi_cursor_quit_key            = '<Esc>'
+
 "-------------------------------- NERDCommenter --------------------------------
 " KEY BINDING
 nmap <C-_> <Plug>NERDCommenterToggle
@@ -159,3 +159,7 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
+
+"-------------------------------- Surround --------------------------------
+
+

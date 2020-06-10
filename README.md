@@ -6,12 +6,13 @@
 2. [Customized Keyboard Shortcuts](#customized-keyboard-shortcuts)
    - [Core](#core)
    - [Plugins/Extensions](#pluginsextensions)
+     - [Conquer of Completion (CoC)](#conquer-of-completion-coc)
+     - [CoC Explorer](#coc-explorer)
+     - [Fuzzy Finder](#fuzzy-finder)
      - [Fugitive](#fugitive)
      - [Multiple Cursors](#multiple-cursors)
-     - [Nerd Tree](#nerd-tree)
-     - [Conquer of Completion](#conquer-of-completion)
-     - [Fuzzy Finder](#fuzzy-finder)
      - [Nerd Commenter](#nerd-commenter)
+     - [Vim Surround](#vim-surround)
 
 ## Installation
 
@@ -57,6 +58,67 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 
 ### Plugins/Extensions
 
+#### [Conquer of Completion (CoC)](https://github.com/neoclide/coc.nvim)
+
+| Key binding         | Mode (Condition)                 | Command                                      |       Recursived?       |
+| ------------------- | -------------------------------- | -------------------------------------------- | :---------------------: |
+| `Tab`               | Insert _(Popup Menu is visible)_ | Move to _next suggestion_                    |  :black_square_button:  |
+| `Shift` + `Tab`     | Insert _(Popup Menu is visible)_ | Move to _previous suggestion_                |  :black_square_button:  |
+| `Enter`             | Insert _(Popup Menu is visible)_ | Select current suggestion                    |  :black_square_button:  |
+| `Ctrl` + `Space`    | Insert                           | Open _Popup Menu_ if CoC find any suggestion |  :black_square_button:  |
+| `g` → `d`           | Normal                           | Go to _definition_                           | :ballot_box_with_check: |
+| `g` → `y`           | Normal                           | Go to _type's definition_                    | :ballot_box_with_check: |
+| `g` → `i`           | Normal                           | Go to _implementation_                       | :ballot_box_with_check: |
+| `g` → `r`           | Normal                           | Go to _references_                           | :ballot_box_with_check: |
+| `g` → `h`           | Normal                           | Open documentation                           |  :black_square_button:  |
+| `Space` → `c` → `r` | Normal                           | Restart CoC's server                         |  :black_square_button:  |
+| `Space` → `c` → `f` | Normal + Visual + Select         | Format selected area                         | :ballot_box_with_check: |
+| `Space` → `c` → `a` | Normal + Visual + Select         | Run selected codes's action for current file | :ballot_box_with_check: |
+
+#### [CoC Explorer](https://github.com/weirongxu/coc-explorer)
+
+| Key binding   | Mode (Condition)            | Command                                 |      Recursived?      |
+| ------------- | --------------------------- | --------------------------------------- | :-------------------: |
+| `Ctrl` + `b`  | Normal                      | Open _CoC Explorer_                     | :black_square_button: |
+| `?`           | _(CoC Explorer is showing)_ | Open _help_                             | :black_square_button: |
+| `*`           | _(CoC Explorer is showing)_ | Toggle Selection                        | :black_square_button: |
+| `.`           | _(CoC Explorer is showing)_ | Toggle hidden                           | :black_square_button: |
+| `Shift` + `r` | _(CoC Explorer is showing)_ | Refresh                                 | :black_square_button: |
+| `q`           | _(CoC Explorer is showing)_ | Quit                                    | :black_square_button: |
+| `Esc`         | _(CoC Explorer is showing)_ | Esc                                     | :black_square_button: |
+| `h`           | _(CoC Explorer is showing)_ | Collapse folder                         | :black_square_button: |
+| `l`           | _(CoC Explorer is showing)_ | Expand folder if possible, else open    | :black_square_button: |
+| `r` → `h`     | _(CoC Explorer is showing)_ | Collapse recursively                    | :black_square_button: |
+| `r` → `l`     | _(CoC Explorer is showing)_ | Expand recursively                      | :black_square_button: |
+| `Backspace`   | _(CoC Explorer is showing)_ | Go to parent directory                  | :black_square_button: |
+| `Enter`       | _(CoC Explorer is showing)_ | `cd` to folder is expandable, else open | :black_square_button: |
+| `y`           | _(CoC Explorer is showing)_ | Copy file's path                        | :black_square_button: |
+| `Shift` + `y` | _(CoC Explorer is showing)_ | Copy file's name                        | :black_square_button: |
+| `c`           | _(CoC Explorer is showing)_ | Copy selected files                     | :black_square_button: |
+| `x`           | _(CoC Explorer is showing)_ | Cut selected files                      | :black_square_button: |
+| `p`           | _(CoC Explorer is showing)_ | Paste selected files                    | :black_square_button: |
+| `d`           | _(CoC Explorer is showing)_ | Delete selected files (to trash)        | :black_square_button: |
+| `Shift` + `d` | _(CoC Explorer is showing)_ | Delete selected files (forever)         | :black_square_button: |
+| `a`           | _(CoC Explorer is showing)_ | Add (create) new file                   | :black_square_button: |
+| `Shift` + `a` | _(CoC Explorer is showing)_ | Add (create) new folder                 | :black_square_button: |
+| `r`           | _(CoC Explorer is showing)_ | Rename selected file/folder             | :black_square_button: |
+| `f`           | _(CoC Explorer is showing)_ | Search for files                        | :black_square_button: |
+| `Shift` + `f` | _(CoC Explorer is showing)_ | Search for files recursively            | :black_square_button: |
+| `X`           | _(CoC Explorer is showing)_ | Execute System's command                | :black_square_button: |
+
+#### [Fuzzy Finder](https://github.com/junegunn/fzf.vim)
+
+| Key binding     | Mode (Condition)   | Command                                  |      Recursived?      |
+| --------------- | ------------------ | ---------------------------------------- | :-------------------: |
+| `Ctrl` + `p`    | Normal             | Start fzf to find files/contents         | :black_square_button: |
+| `Space` → `b`   | Normal             | Show fzf's buffers                       | :black_square_button: |
+| `Space` → `h`   | Normal             | Show fzf's histories                     | :black_square_button: |
+| `Ctrl` + `t`    | _(FzF is running)_ | Open selected files as vim's tabs        | :black_square_button: |
+| `Ctrl` + `j`    | _(FzF is running)_ | Navigate to _upper file_                 | :black_square_button: |
+| `Ctrl` + `k`    | _(FzF is running)_ | Navigate to _lower file_                 | :black_square_button: |
+| `Tab`           | _(FzF is running)_ | Multi-select _current file & lower file_ | :black_square_button: |
+| `Shift` + `Tab` | _(FzF is running)_ | Multi-select _current file & upper_      | :black_square_button: |
+
 #### [Fugitive](https://github.com/tpope/vim-fugitive)
 
 | Key binding                   | Mode (Condition)                   | Command                         |       Recursived?       |
@@ -80,44 +142,19 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | `Alt` + `x`                 | _Essentials_     | Skip current word          | :black_square_button: |
 | `Esc`                       | _Essentials_     | Quit multi-cursor          | :black_square_button: |
 
-#### [Nerd Tree](https://github.com/preservim/nerdtree)
-
-| Key binding  | Mode (Condition) | Command                   |       Recursived?       |
-| ------------ | ---------------- | ------------------------- | :---------------------: |
-| `Ctrl` + `b` | _Essentials_     | Toggle Nerd Tree at `pwd` | :ballot_box_with_check: |
-
-#### [Conquer of Completion](https://github.com/neoclide/coc.nvim)
-
-| Key binding         | Mode (Condition)                 | Command                                      |       Recursived?       |
-| ------------------- | -------------------------------- | -------------------------------------------- | :---------------------: |
-| `Tab`               | Insert _(Popup Menu is visible)_ | Move to _next suggestion_                    |  :black_square_button:  |
-| `Shift` + `Tab`     | Insert _(Popup Menu is visible)_ | Move to _previous suggestion_                |  :black_square_button:  |
-| `Enter`             | Insert _(Popup Menu is visible)_ | Select current suggestion                    |  :black_square_button:  |
-| `Ctrl` + `Space`    | Insert                           | Open _Popup Menu_ if CoC find any suggestion |  :black_square_button:  |
-| `g` → `d`           | Normal                           | Go to _definition_                           | :ballot_box_with_check: |
-| `g` → `y`           | Normal                           | Go to _type's definition_                    | :ballot_box_with_check: |
-| `g` → `i`           | Normal                           | Go to _implementation_                       | :ballot_box_with_check: |
-| `g` → `r`           | Normal                           | Go to _references_                           | :ballot_box_with_check: |
-| `g` → `h`           | Normal                           | Open documentation                           |  :black_square_button:  |
-| `Space` → `c` → `r` | Normal                           | Restart CoC's server                         |  :black_square_button:  |
-| `Space` → `c` → `f` | Normal + Visual + Select         | Format selected area                         | :ballot_box_with_check: |
-| `Space` → `c` → `a` | Normal + Visual + Select         | Run selected codes's action for current file | :ballot_box_with_check: |
-
-#### [Fuzzy Finder](https://github.com/junegunn/fzf.vim)
-
-| Key binding     | Mode (Condition)   | Command                                  |      Recursived?      |
-| --------------- | ------------------ | ---------------------------------------- | :-------------------: |
-| `Ctrl` + `p`    | Normal             | Start fzf to find files/contents         | :black_square_button: |
-| `Space` → `b`   | Normal             | Show fzf's buffers                       | :black_square_button: |
-| `Space` → `h`   | Normal             | Show fzf's histories                     | :black_square_button: |
-| `Ctrl` + `t`    | _(FzF is running)_ | Open selected files as vim's tabs        | :black_square_button: |
-| `Ctrl` + `j`    | _(FzF is running)_ | Navigate to _upper file_                 | :black_square_button: |
-| `Ctrl` + `k`    | _(FzF is running)_ | Navigate to _lower file_                 | :black_square_button: |
-| `Tab`           | _(FzF is running)_ | Multi-select _current file & lower file_ | :black_square_button: |
-| `Shift` + `Tab` | _(FzF is running)_ | Multi-select _current file & upper_      | :black_square_button: |
-
 #### [Nerd Commenter](https://github.com/preservim/nerdcommenter)
 
 | Key binding  | Mode (Condition)         | Command                          |       Recursived?       |
 | ------------ | ------------------------ | -------------------------------- | :---------------------: |
 | `Ctrl` + `/` | Normal + Visual + Select | Toggle comment for selected area | :ballot_box_with_check: |
+
+#### [Vim Surround](https://github.com/tpope/vim-surround)
+
+For more information & examples, go to [author's github](https://github.com/tpope/vim-surround). The following key bindings are only for common usecase.
+
+| Key binding                                     | Mode (Condition) | Command                                          |      Recursived?      |
+| ----------------------------------------------- | ---------------- | ------------------------------------------------ | :-------------------: |
+| `c` → `s` → `current surround` → `new surround` | _Essentials_     | Change from `current surround` to `new surround` | :black_square_button: |
+| `d` → `s` → `current surround`                  | _Essentials_     | Delete `current surround`                        | :black_square_button: |
+| `c` → `s` → `t` → `new surround`                | _Essentials_     | Change circularly to `new surround`              | :black_square_button: |
+

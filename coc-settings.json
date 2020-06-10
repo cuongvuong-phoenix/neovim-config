@@ -9,5 +9,54 @@
     "json",
     "vue",
     "markdown"
-  ]
+  ],
+  // coc-explorer
+  "explorer.width": 32,
+  "explorer.openAction.strategy": "tab",
+  "explorer.icon.enableNerdfont": true,
+  "explorer.datetime.format": "dd/MM/yyyy - HH:mm:ss",
+  "explorer.file.column.indent.chars": "    ",
+  "explorer.keyMappings": {
+    "i": false, // cancel default mapkey
+
+    // Essentials
+    "?": "help",
+    "*": "toggleSelection",
+    ".": "toggleHidden",
+    "R": "refresh",
+    "q": "quit",
+    "<esc>": "esc",
+
+    // Navigating
+    "h": "collapse",
+    "l": ["expandable?", "expand", "open"],
+    "rl": "expandRecursive",
+    "rh": "collapseRecursive",
+    "<bs>": "gotoParent",
+    "<2-LeftMouse>": [
+      "expandable?",
+      ["expanded?", "collapse", "expand"],
+      "open"
+    ],
+    "<cr>": ["expandable?", "cd", "open"],
+
+    // Modifying
+    "y": "copyFilepath",
+    "Y": "copyFilename",
+    "c": "copyFile",
+    "x": "cutFile",
+    "p": "pasteFile",
+    "d": "delete",
+    "D": "deleteForever",
+    "a": "addFile",
+    "A": "addDirectory",
+    "r": "rename",
+
+    // Searching
+    "f": "search",
+    "F": "searchRecursive",
+
+    // Others
+    "X": "systemExecute"
+  }
 }
