@@ -60,8 +60,8 @@ map <leader>K <C-w>+
 map <leader>J <C-w>-
 
 " Navigate between Tabs
-nnoremap <Tab> :tabnext<CR>
-nnoremap <S-Tab> :tabprev<CR>
+nnoremap tl :tabnext<CR>
+nnoremap th :tabprev<CR>
 
 " Move lines
 nnoremap <A-j> :m .+1<CR>==

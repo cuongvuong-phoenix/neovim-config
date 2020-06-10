@@ -56,6 +56,9 @@ Plug 'tpope/vim-obsession'
 " Change surround character
 Plug 'tpope/vim-surround'
 
+" Reopen files at last edit position
+Plug 'farmergreg/vim-lastplace'
+
 call plug#end()
 
 "-------------------------------- QUICK SETTINGS --------------------------------
