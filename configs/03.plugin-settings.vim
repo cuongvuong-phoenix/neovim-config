@@ -74,6 +74,9 @@ vmap <leader>cf  <Plug>(coc-format-selected)
 vmap <leader>ca  <Plug>(coc-codeaction-selected)
 nmap <leader>ca  <Plug>(coc-codeaction-selected)
 
+"-------------------------------- coc-json --------------------------------
+autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
+
 "-------------------------------- coc-explorer --------------------------------
 nmap <C-b> :CocCommand explorer --toggle <CR>
 

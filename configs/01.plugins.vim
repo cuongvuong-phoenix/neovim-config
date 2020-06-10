@@ -14,8 +14,10 @@ Plug 'scrooloose/syntastic'
 " Intergrated with Tmux
 Plug 'christoomey/vim-tmux-navigator' 
 
-" Intellisense Engine
+" Intellisense Engine (Conquer of Completion)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/jsonc.vim'
+
 let g:coc_global_extensions = [
             \ 'coc-python',
             \ 'coc-tsserver',
