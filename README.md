@@ -34,46 +34,47 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 
 ### Core
 
-| Key binding             | Mode                     | Command                                  |    Recursived?     |
-| ----------------------- | ------------------------ | ---------------------------------------- | :----------------: |
-| `Space`                 | _Essentials_             | Vim's `leader` key                       | :white_check_mark: |
-| `Space` → `n`           | Normal                   | Toggle `hlsearch`                        | :white_check_mark: |
-| `Space` → `-`           | Normal                   | Split into panes _horizontally_          | :heavy_check_mark: |
-| `Space` → `_`           | Normal                   | Split into panes _vertically_            | :heavy_check_mark: |
-| `Ctrl` + `h`            | Normal                   | Navigate to the _left pane_              | :white_check_mark: |
-| `Ctrl` + `j`            | Normal                   | Navigate to the _lower pane_             | :white_check_mark: |
-| `Ctrl` + `k`            | Normal                   | Navigate to the _upper pane_             | :white_check_mark: |
-| `Ctrl` + `l`            | Normal                   | Navigate to the _right pane_             | :white_check_mark: |
-| `Space` → `Shift` + `h` | _Essentials_             | Resize pane to the _left_                | :heavy_check_mark: |
-| `Space` → `Shift` + `j` | _Essentials_             | Resize pane to the _lower side_          | :heavy_check_mark: |
-| `Space` → `Shift` + `k` | _Essentials_             | Resize pane to the _upper side_          | :heavy_check_mark: |
-| `Space` → `Shift` + `l` | _Essentials_             | Resize pane to the _right_               | :heavy_check_mark: |
-| `t` → `l`               | Normal                   | Select _next tab_                        | :white_check_mark: |
-| `t` → `h`               | Normal                   | Select _previous tab_                    | :white_check_mark: |
-| `Alt` + `j`             | Normal + Visual + Select | Move current/selected _area below_       | :white_check_mark: |
-| `Alt` + `k`             | Normal + Visual + Select | Move current/selected _area above_       | :white_check_mark: |
-| `Ctlr` + `c`            | Visual + Select          | Copy selected area to system's clipboard | :white_check_mark: |
-| `Ctlr` + `x`            | Visual + Select          | Cut selected area to system's clipboard  | :white_check_mark: |
-| `'` + `"`               | _Essentials_             | Jump to position where last time quitted  | :white_check_mark: |
+| Key binding              | Mode                     | Command                                    |    Recursived?     |
+| ------------------------ | ------------------------ | ------------------------------------------ | :----------------: |
+| `Space`                  | _Essentials_             | Vim's `leader` key                         | :white_check_mark: |
+| `leader` → `n`           | Normal                   | Toggle `hlsearch`                          | :white_check_mark: |
+| `leader` → `-`           | Normal                   | Split into panes _horizontally_            | :heavy_check_mark: |
+| `leader` → `_`           | Normal                   | Split into panes _vertically_              | :heavy_check_mark: |
+| `Ctrl` + `h`             | Normal                   | Navigate to the _left pane_                | :white_check_mark: |
+| `Ctrl` + `j`             | Normal                   | Navigate to the _lower pane_               | :white_check_mark: |
+| `Ctrl` + `k`             | Normal                   | Navigate to the _upper pane_               | :white_check_mark: |
+| `Ctrl` + `l`             | Normal                   | Navigate to the _right pane_               | :white_check_mark: |
+| `leader` → `Shift` + `h` | _Essentials_             | Resize pane to the _left_                  | :heavy_check_mark: |
+| `leader` → `Shift` + `j` | _Essentials_             | Resize pane to the _lower side_            | :heavy_check_mark: |
+| `leader` → `Shift` + `k` | _Essentials_             | Resize pane to the _upper side_            | :heavy_check_mark: |
+| `leader` → `Shift` + `l` | _Essentials_             | Resize pane to the _right_                 | :heavy_check_mark: |
+| `t` → `l`                | Normal                   | Select _next tab_                          | :white_check_mark: |
+| `t` → `h`                | Normal                   | Select _previous tab_                      | :white_check_mark: |
+| `Alt` + `j`              | Normal + Visual + Select | Move current/selected _region below_       | :white_check_mark: |
+| `Alt` + `k`              | Normal + Visual + Select | Move current/selected _region above_       | :white_check_mark: |
+| `Ctlr` + `c`             | Visual + Select          | Copy selected region to system's clipboard | :white_check_mark: |
+| `Ctlr` + `x`             | Visual + Select          | Cut selected region to system's clipboard  | :white_check_mark: |
+| `'` + `"`                | _Essentials_             | Jump to position where last time quitted   | :white_check_mark: |
 
 ### Plugins/Extensions
 
 #### [Conquer of Completion (CoC)](https://github.com/neoclide/coc.nvim)
 
-| Key binding         | Mode (Condition)                 | Command                                                |    Recursived?     |
-| ------------------- | -------------------------------- | ------------------------------------------------------ | :----------------: |
-| `Tab`               | Insert (_Popup Menu_ is visible) | Move to _next suggestion_                              | :white_check_mark: |
-| `Shift` + `Tab`     | Insert (_Popup Menu_ is visible) | Move to _previous suggestion_                          | :white_check_mark: |
-| `Enter`             | Insert (_Popup Menu_ is visible) | Select current suggestion                              | :white_check_mark: |
-| `Ctrl` + `Space`    | Insert                           | Open **_Popup Menu_** if **_CoC_** find any suggestion | :white_check_mark: |
-| `g` → `d`           | Normal                           | Go to _definition_                                     | :heavy_check_mark: |
-| `g` → `y`           | Normal                           | Go to _type's definition_                              | :heavy_check_mark: |
-| `g` → `i`           | Normal                           | Go to _implementation_                                 | :heavy_check_mark: |
-| `g` → `r`           | Normal                           | Go to _references_                                     | :heavy_check_mark: |
-| `g` → `h`           | Normal                           | Open documentation                                     | :white_check_mark: |
-| `Space` → `c` → `r` | Normal                           | Restart **_CoC_**'s server                             | :white_check_mark: |
-| `Space` → `c` → `f` | Normal + Visual + Select         | Format selected area                                   | :heavy_check_mark: |
-| `Space` → `c` → `a` | Normal + Visual + Select         | Run selected codes's action for current file           | :heavy_check_mark: |
+| Key binding          | Mode (Condition)                 | Command                                                |    Recursived?     |
+| -------------------- | -------------------------------- | ------------------------------------------------------ | :----------------: |
+| `Tab`                | Insert (_Popup Menu_ is visible) | Move to _next suggestion_                              | :white_check_mark: |
+| `Shift` + `Tab`      | Insert (_Popup Menu_ is visible) | Move to _previous suggestion_                          | :white_check_mark: |
+| `Enter`              | Insert (_Popup Menu_ is visible) | Select current suggestion                              | :white_check_mark: |
+| `Ctrl` + `leader`    | Insert                           | Open **_Popup Menu_** if **_CoC_** find any suggestion | :white_check_mark: |
+| `g` → `d`            | Normal                           | Go to _definition_                                     | :heavy_check_mark: |
+| `g` → `y`            | Normal                           | Go to _type's definition_                              | :heavy_check_mark: |
+| `g` → `i`            | Normal                           | Go to _implementation_                                 | :heavy_check_mark: |
+| `g` → `r`            | Normal                           | Go to _references_                                     | :heavy_check_mark: |
+| `g` → `h`            | Normal                           | Open documentation                                     | :white_check_mark: |
+| `leader` → `r` → `n` | Normal                           | Rename symbol                                          | :white_check_mark: |
+| `leader` → `c` → `r` | Normal                           | Restart **_CoC_**'s server                             | :white_check_mark: |
+| `leader` → `c` → `f` | Normal + Visual + Select         | Format selected region                                 | :heavy_check_mark: |
+| `leader` → `c` → `a` | Normal + Visual + Select         | Run selected codes's action for current file           | :heavy_check_mark: |
 
 #### [CoC Explorer](https://github.com/weirongxu/coc-explorer)
 
@@ -111,8 +112,8 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | Key binding     | Mode (Condition)   | Command                                  |    Recursived?     |
 | --------------- | ------------------ | ---------------------------------------- | :----------------: |
 | `Ctrl` + `p`    | Normal             | Start **_FzF_** to find files/contents   | :white_check_mark: |
-| `Space` → `b`   | Normal             | Show **_FzF_**'s buffers                 | :white_check_mark: |
-| `Space` → `h`   | Normal             | Show **_FzF_**'s histories               | :white_check_mark: |
+| `leader` → `b`  | Normal             | Show **_FzF_**'s buffers                 | :white_check_mark: |
+| `leader` → `h`  | Normal             | Show **_FzF_**'s histories               | :white_check_mark: |
 | `Ctrl` + `t`    | (_FzF_ is running) | Open selected files as vim's tabs        | :white_check_mark: |
 | `Ctrl` + `j`    | (_FzF_ is running) | Navigate to _upper file_                 | :white_check_mark: |
 | `Ctrl` + `k`    | (_FzF_ is running) | Navigate to _lower file_                 | :white_check_mark: |
@@ -121,32 +122,32 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 
 #### [Fugitive](https://github.com/tpope/vim-fugitive)
 
-| Key binding                   | Mode (Condition)                   | Command                             |    Recursived?     |
-| ----------------------------- | ---------------------------------- | ----------------------------------- | :----------------: |
-| `Space` → `Shift` + `g` → `s` | Normal                             | Open `git status` by **_Fugitive_** | :heavy_check_mark: |
-| `s`                           | (_Fugitive_ git status)            | Mark file(s) as _Staged_            | :white_check_mark: |
-| `u`                           | (_Fugitive_ git status)            | Mark file(s) as _Unstaged_          | :white_check_mark: |
-| `d` → `v`                     | (_Fugitive_ git status)            | Open files to solve conflicts       | :white_check_mark: |
-| `Space` → `Shift` + `g` → `h` | Normal (_Fugitive_ merge conflict) | Keep contents of _left side_        | :heavy_check_mark: |
-| `Space` → `Shift` + `g` → `l` | Normal (_Fugitive_ merge conflict) | Keep contents of _right side_       | :heavy_check_mark: |
+| Key binding                    | Mode (Condition)                   | Command                             |    Recursived?     |
+| ------------------------------ | ---------------------------------- | ----------------------------------- | :----------------: |
+| `leader` → `Shift` + `g` → `s` | Normal                             | Open `git status` by **_Fugitive_** | :heavy_check_mark: |
+| `s`                            | (_Fugitive_ git status)            | Mark file(s) as _Staged_            | :white_check_mark: |
+| `u`                            | (_Fugitive_ git status)            | Mark file(s) as _Unstaged_          | :white_check_mark: |
+| `d` → `v`                      | (_Fugitive_ git status)            | Open files to solve conflicts       | :white_check_mark: |
+| `leader` → `Shift` + `g` → `h` | Normal (_Fugitive_ merge conflict) | Keep contents of _left side_        | :heavy_check_mark: |
+| `leader` → `Shift` + `g` → `l` | Normal (_Fugitive_ merge conflict) | Keep contents of _right side_       | :heavy_check_mark: |
 
 #### [Multiple Cursors](https://github.com/terryma/vim-multiple-cursors)
 
-| Key binding                 | Mode (Condition) | Command                    |    Recursived?     |
-| --------------------------- | ---------------- | -------------------------- | :----------------: |
-| `Alt` + `d`                 | _Essentials_     | Select _next word_         | :white_check_mark: |
-| `g` → `Alt` + `d`           | _Essentials_     | Select _next key_          | :white_check_mark: |
-| `Space` → `Alt` + `d`       | _Essentials_     | Select _all words_         | :white_check_mark: |
-| `Space` → `g` → `Alt` + `d` | _Essentials_     | Select _all keys_          | :white_check_mark: |
-| `Alt` + `u`                 | _Essentials_     | Select _previous word/key_ | :white_check_mark: |
-| `Alt` + `x`                 | _Essentials_     | Skip current word          | :white_check_mark: |
-| `Esc`                       | _Essentials_     | Quit multi-cursor          | :white_check_mark: |
+| Key binding                  | Mode (Condition) | Command                    |    Recursived?     |
+| ---------------------------- | ---------------- | -------------------------- | :----------------: |
+| `Alt` + `d`                  | _Essentials_     | Select _next word_         | :white_check_mark: |
+| `g` → `Alt` + `d`            | _Essentials_     | Select _next key_          | :white_check_mark: |
+| `leader` → `Alt` + `d`       | _Essentials_     | Select _all words_         | :white_check_mark: |
+| `leader` → `g` → `Alt` + `d` | _Essentials_     | Select _all keys_          | :white_check_mark: |
+| `Alt` + `u`                  | _Essentials_     | Select _previous word/key_ | :white_check_mark: |
+| `Alt` + `x`                  | _Essentials_     | Skip current word          | :white_check_mark: |
+| `Esc`                        | _Essentials_     | Quit multi-cursor          | :white_check_mark: |
 
 #### [Nerd Commenter](https://github.com/preservim/nerdcommenter)
 
-| Key binding  | Mode (Condition)         | Command                          |    Recursived?     |
-| ------------ | ------------------------ | -------------------------------- | :----------------: |
-| `Ctrl` + `/` | Normal + Visual + Select | Toggle comment for selected area | :heavy_check_mark: |
+| Key binding  | Mode (Condition)         | Command                            |    Recursived?     |
+| ------------ | ------------------------ | ---------------------------------- | :----------------: |
+| `Ctrl` + `/` | Normal + Visual + Select | Toggle comment for selected region | :heavy_check_mark: |
 
 #### [Vim Surround](https://github.com/tpope/vim-surround)
 

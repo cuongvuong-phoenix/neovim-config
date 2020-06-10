@@ -22,6 +22,11 @@
     "prettier.semi": true,
     "prettier.bracketSpacing": true,
 
+    // Vetur
+    "vetur.format.options.tabSize": 4,
+    "vetur.format.defaultFormatter.html": "prettier",
+    "vetur.experimental.templateInterpolationService": true,
+
     // coc-explorer
     "explorer.width": 32,
     "explorer.openAction.strategy": "tab",

@@ -19,21 +19,38 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/jsonc.vim'
 
 let g:coc_global_extensions = [
+            \ 'coc-clangd',
+            \ 'coc-cmake',
+            \ 'coc-java',
+            \ 'coc-omnisharp',
             \ 'coc-python',
+            \ 'coc-go',
             \ 'coc-tsserver',
-            \ 'coc-vetur',
-            \ 'coc-flutter',
-            \ 'coc-tailwindcss',
-            \ 'coc-jest',
+            \ 'coc-json', 
+            \ 'coc-css',
+            \ 'coc-cssmodules',
+            \ 'coc-html',
             \ 'coc-yaml',
+            \ 'coc-xml',
+            \ 'coc-sql',
+            \ 
             \ 'coc-prettier', 
             \ 'coc-eslint', 
-            \ 'coc-json', 
-            \ 'coc-pairs',
+            \ 'coc-tailwindcss',
+            \ 'coc-vetur',
+            \ 'coc-angular',
+            \ 'coc-flutter',
+            \ 'coc-jest',
+            \
+            \ 'coc-explorer',
             \ 'coc-snippets',
-            \ 'coc-explorer' ]
+            \ 'coc-pairs',
+            \ 'coc-highlight',
+            \ 'coc-tabnine',
+            \ 'coc-pyright',
+            \ ]
 
-"---------------- ULTILITIES ----------------
+"---------------- UTILITIES ----------------
 " Files finder
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
