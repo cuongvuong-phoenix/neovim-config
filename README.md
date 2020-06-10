@@ -4,15 +4,15 @@
 
 1. [Installation](#installation)
 2. [Customized Keyboard Shortcuts](#customized-keyboard-shortcuts)
-   - [Core](#core)
-   - [Plugins/Extensions](#pluginsextensions)
-     - [Conquer of Completion (CoC)](#conquer-of-completion-coc)
-     - [CoC Explorer](#coc-explorer)
-     - [Fuzzy Finder](#fuzzy-finder)
-     - [Fugitive](#fugitive)
-     - [Multiple Cursors](#multiple-cursors)
-     - [Nerd Commenter](#nerd-commenter)
-     - [Vim Surround](#vim-surround)
+    - [Core](#core)
+    - [Plugins/Extensions](#pluginsextensions)
+        - [Conquer of Completion (CoC)](#conquer-of-completion-coc)
+        - [CoC Explorer](#coc-explorer)
+        - [Fuzzy Finder](#fuzzy-finder)
+        - [Fugitive](#fugitive)
+        - [Multiple Cursors](#multiple-cursors)
+        - [Nerd Commenter](#nerd-commenter)
+        - [Vim Surround](#vim-surround)
 
 ## Installation
 
