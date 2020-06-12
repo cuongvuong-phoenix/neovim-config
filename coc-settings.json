@@ -12,6 +12,9 @@
         "css",
         "html"
     ],
+    // Color highlight
+    "highlight.colors.enable": false,
+    
 
     // Prettier
     "prettier.trailingComma": "es5",

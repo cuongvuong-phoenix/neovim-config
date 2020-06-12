@@ -11,8 +11,8 @@ Plug 'sheerun/vim-polyglot'
 " Syntax Checking
 Plug 'scrooloose/syntastic'
 
-" Intergrated with Tmux
-Plug 'christoomey/vim-tmux-navigator' 
+" " Intergrated with Tmux
+" Plug 'christoomey/vim-tmux-navigator'
 
 " Intellisense Engine (Conquer of Completion)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -75,6 +75,12 @@ Plug 'tpope/vim-surround'
 
 " " Reopen files at last edit position
 " Plug 'farmergreg/vim-lastplace'
+
+" Color highlighting document text
+Plug 'lilydjwg/colorizer'
+
+" Preview markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
 call plug#end()
 

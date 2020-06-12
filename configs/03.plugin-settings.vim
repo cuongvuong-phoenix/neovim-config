@@ -195,5 +195,5 @@ let g:NERDToggleCheckAllLines = 1
 nmap <C-_> <Plug>NERDCommenterToggle
 vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 
-"-------------------------------- Surround --------------------------------
-
+"-------------------------------- Markdown Preview --------------------------------
+nmap <F12> <Plug>MarkdownPreviewToggle

@@ -13,6 +13,7 @@
         - [Multiple Cursors](#multiple-cursors)
         - [Nerd Commenter](#nerd-commenter)
         - [Vim Surround](#vim-surround)
+        - [Markdown Preview](#markdown-preview)
 
 ## Installation
 
@@ -155,6 +156,13 @@ For more information & examples, go to [author's github](https://github.com/tpop
 
 | Key binding                                     | Mode (Condition) | Command                                          |    Recursived?     |
 | ----------------------------------------------- | ---------------- | ------------------------------------------------ | :----------------: |
+| `Shift` + `s` + `new surround`                  | Visual + Select  | Surround selected region with `new surround`     | :white_check_mark: |
 | `c` → `s` → `current surround` → `new surround` | _Essentials_     | Change from `current surround` to `new surround` | :white_check_mark: |
 | `d` → `s` → `current surround`                  | _Essentials_     | Delete `current surround`                        | :white_check_mark: |
 | `c` → `s` → `t` → `new surround`                | _Essentials_     | Change circularly to `new surround`              | :white_check_mark: |
+
+#### [Markdown Preview](https://github.com/iamcco/markdown-preview.nvim)
+
+| Key binding | Mode (Condition) | Command                 |    Recursived?     |
+| ----------- | ---------------- | ----------------------- | :----------------: |
+| `F12`       | _Essentials_     | Toggle markdown preview | :white_check_mark: |

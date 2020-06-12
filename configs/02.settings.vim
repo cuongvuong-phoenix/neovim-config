@@ -70,6 +70,6 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Common usual keys
-vnoremap <C-c> "+y
-vnoremap <C-x> "+x
+noremap <C-c> "+y
+noremap <C-x> "+x
 noremap <C-v> "+gP
