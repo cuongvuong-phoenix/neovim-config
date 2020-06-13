@@ -156,6 +156,32 @@ nmap <leader>Gh :diffget //2<CR>
 " Keep the content of right side, abort left side
 nmap <leader>Gl :diffget //3<CR>
 
+"-------------------------------- Git Gutter --------------------------------
+"---------------- Settings ----------------
+highlight GitGutterAdd    guifg=#98C379 ctermfg=2
+highlight GitGutterChange guifg=#BBBB00 ctermfg=3
+highlight GitGutterDelete guifg=#E06C75 ctermfg=1
+
+" Always enable
+let g:gitgutter_enabled = 1
+
+" Disblae plugin's mapping
+let g:gitgutter_map_keys = 0
+
+" Disable line highlighting
+let g:gitgutter_highlight_lines = 0
+
+" Change symbols
+" let g:gitgutter_sign_added = 'xx'
+" let g:gitgutter_sign_modified = 'yy'
+" let g:gitgutter_sign_removed = 'zz'
+" let g:gitgutter_sign_removed_first_line = '^^'
+" let g:gitgutter_sign_modified_removed = 'ww'
+
+"---------------- Key bindings ----------------
+nmap ) <Plug>(GitGutterNextHunk)
+nmap ( <Plug>(GitGutterPrevHunk)
+
 "-------------------------------- Multi-Curosr --------------------------------
 "---------------- Key bindings ----------------
 " Disable default key bindings
@@ -197,3 +223,10 @@ vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 
 "-------------------------------- Markdown Preview --------------------------------
 nmap <F12> <Plug>MarkdownPreviewToggle
+
+"-------------------------------- Hexokinase --------------------------------
+" Style
+let g:Hexokinase_highlighters = ['backgroundfull']
+
+" Refresh whenever Leaving Insert mode
+let g:Hexokinase_refreshEvents = ['InsertLeave']

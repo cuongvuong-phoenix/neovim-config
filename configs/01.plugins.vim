@@ -55,8 +55,9 @@ let g:coc_global_extensions = [
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" Git wrapper
+" Git's extensions
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Auto pairing (), {}, [],...
 Plug 'jiangmiao/auto-pairs'
@@ -77,10 +78,14 @@ Plug 'tpope/vim-surround'
 " Plug 'farmergreg/vim-lastplace'
 
 " Color highlighting document text
-Plug 'lilydjwg/colorizer'
+" Plug 'lilydjwg/colorizer'
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 " Preview markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+
+" Repeat plugin's mapping
+Plug 'tpope/vim-repeat'
 
 call plug#end()
 
