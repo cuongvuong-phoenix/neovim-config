@@ -229,7 +229,7 @@ nmap <F12> <Plug>MarkdownPreviewToggle
 let g:Hexokinase_highlighters = ['backgroundfull']
 
 " Refresh whenever Leaving Insert mode
-let g:Hexokinase_refreshEvents = ['InsertLeave']
+let g:Hexokinase_refreshEvents = ['BufRead', 'BufWrite', 'InsertLeave']
 
 let g:Hexokinase_optInPatterns = [
 \     'full_hex',
@@ -239,4 +239,8 @@ let g:Hexokinase_optInPatterns = [
 \     'hsl',
 \     'hsla',
 \ ]
+
+" Disable file types 
+let g:Hexokinase_ftDisabled = []
+
 
