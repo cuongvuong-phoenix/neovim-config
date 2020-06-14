@@ -110,27 +110,34 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 
 #### [Fuzzy Finder](https://github.com/junegunn/fzf.vim)
 
-| Key binding     | Mode (Condition)   | Command                                  |    Recursived?     |
-| --------------- | ------------------ | ---------------------------------------- | :----------------: |
-| `Ctrl` + `p`    | Normal             | Start **_FzF_** to find files/contents   | :white_check_mark: |
-| `leader` → `b`  | Normal             | Show **_FzF_**'s buffers                 | :white_check_mark: |
-| `leader` → `h`  | Normal             | Show **_FzF_**'s histories               | :white_check_mark: |
-| `Ctrl` + `t`    | (_FzF_ is running) | Open selected files as vim's tabs        | :white_check_mark: |
-| `Ctrl` + `j`    | (_FzF_ is running) | Navigate to _upper file_                 | :white_check_mark: |
-| `Ctrl` + `k`    | (_FzF_ is running) | Navigate to _lower file_                 | :white_check_mark: |
-| `Tab`           | (_FzF_ is running) | Multi-select _current file & lower file_ | :white_check_mark: |
-| `Shift` + `Tab` | (_FzF_ is running) | Multi-select _current file & upper_      | :white_check_mark: |
+| Key binding     | Mode (Condition)   | Command                                |    Recursived?     |
+| --------------- | ------------------ | -------------------------------------- | :----------------: |
+| `Ctrl` + `p`    | Normal             | Start **_FzF_** to find files/contents | :white_check_mark: |
+| `leader` → `b`  | Normal             | Show **_FzF_**'s buffers               | :white_check_mark: |
+| `leader` → `h`  | Normal             | Show **_FzF_**'s histories             | :white_check_mark: |
+| `Ctrl` + `t`    | (_FzF_ is running) | Open selected files as vim's tabs      | :white_check_mark: |
+| `Ctrl` + `j`    | (_FzF_ is running) | Navigate to _upper file_               | :white_check_mark: |
+| `Ctrl` + `k`    | (_FzF_ is running) | Navigate to _lower file_               | :white_check_mark: |
+| `Tab`           | (_FzF_ is running) | Multi-select _current file_            | :white_check_mark: |
+| `Shift` + `Tab` | (_FzF_ is running) | Cancel Multi-select of _current file_  | :white_check_mark: |
 
 #### [Fugitive](https://github.com/tpope/vim-fugitive)
 
-| Key binding                    | Mode (Condition)                   | Command                             |    Recursived?     |
-| ------------------------------ | ---------------------------------- | ----------------------------------- | :----------------: |
-| `leader` → `Shift` + `g` → `s` | Normal                             | Open `git status` by **_Fugitive_** | :heavy_check_mark: |
-| `s`                            | (_Fugitive_ git status)            | Mark file(s) as _Staged_            | :white_check_mark: |
-| `u`                            | (_Fugitive_ git status)            | Mark file(s) as _Unstaged_          | :white_check_mark: |
-| `d` → `v`                      | (_Fugitive_ git status)            | Open files to solve conflicts       | :white_check_mark: |
-| `leader` → `Shift` + `g` → `h` | Normal (_Fugitive_ merge conflict) | Keep contents of _left side_        | :heavy_check_mark: |
-| `leader` → `Shift` + `g` → `l` | Normal (_Fugitive_ merge conflict) | Keep contents of _right side_       | :heavy_check_mark: |
+| Key binding          | Mode (Condition)              | Command                             |    Recursived?     |
+| -------------------- | ----------------------------- | ----------------------------------- | :----------------: |
+| `leader` → `g` → `s` | Normal                        | Open `git status` by **_Fugitive_** | :heavy_check_mark: |
+| `s`                  | (_Fugitive_ git status mode)  | Mark file(s) as _Staged_            | :white_check_mark: |
+| `u`                  | (_Fugitive_ git status mode)  | Mark file(s) as _Unstaged_          | :white_check_mark: |
+| `d` → `v`            | (_Fugitive_ git status mode)  | Open files to solve conflicts       | :white_check_mark: |
+| `leader` → `g` → `h` | Normal (_Fugitive_ diff mode) | Keep contents of _left side_        | :heavy_check_mark: |
+| `leader` → `g` → `l` | Normal (_Fugitive_ diff mode) | Keep contents of _right side_       | :heavy_check_mark: |
+
+#### [Git Gutter](https://github.com/airblade/vim-gitgutter)
+
+| Key binding          | Mode (Condition) | Command                     |    Recursived?     |
+| -------------------- | ---------------- | --------------------------- | :----------------: |
+| `leader` → `g` → `j` | Normal           | Jump to the next _Hunk_     | :heavy_check_mark: |
+| `leader` → `g` → `k` | Normal           | Jump to the previous _Hunk_ | :heavy_check_mark: |
 
 #### [Multiple Cursors](https://github.com/terryma/vim-multiple-cursors)
 

@@ -1,4 +1,7 @@
+"-------------------------------------------------------------------------
 "-------------------------------- Airline --------------------------------
+"-------------------------------------------------------------------------
+
 "---------------- Settings ----------------
 let g:airline_powerline_fonts = 1
 let g:airline_theme='onedark'
@@ -10,7 +13,10 @@ let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#tabline#right_alt_sew = "|"
 let g:airline#extensions#tabline#formatter = "unique_tail"
 
+"---------------------------------------------------------------------------
 "-------------------------------- Syntastic --------------------------------
+"---------------------------------------------------------------------------
+
 "---------------- Settings ----------------
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -21,7 +27,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+"---------------------------------------------------------------------
 "-------------------------------- CoC --------------------------------
+"---------------------------------------------------------------------
+
 "---------------- Settings ----------------
 set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup "
 
@@ -94,18 +103,27 @@ vmap <leader>cf  <Plug>(coc-format-selected)
 vmap <leader>ca  <Plug>(coc-codeaction-selected)
 nmap <leader>ca  <Plug>(coc-codeaction-selected)
 
+"--------------------------------------------------------------------------
 "-------------------------------- coc-json --------------------------------
+"--------------------------------------------------------------------------
+
 "---------------- Settings ----------------
 " Get correct comment highlighting in .json files
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
 autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
 
+"------------------------------------------------------------------------------
 "-------------------------------- coc-explorer --------------------------------
+"------------------------------------------------------------------------------
+
 "---------------- Key bindings ----------------
 nmap <C-b> :CocCommand explorer --toggle <CR>
 
+"---------------------------------------------------------------------
 "-------------------------------- FzF --------------------------------
+"---------------------------------------------------------------------
+
 "---------------- Settings ----------------
 " Open fzf in a floating window
 let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'border': 'sharp', 'highlight': 'Todo' } }
@@ -147,16 +165,22 @@ nnoremap <C-p> :Files<CR>
 nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>h :History<CR>
 
+"--------------------------------------------------------------------------
 "-------------------------------- Fugitive --------------------------------
+"--------------------------------------------------------------------------
+
 "---------------- Key bindings ----------------
 " Open Git status
-nmap <leader>Gs :Git<CR>
+nmap <leader>gs :Git<CR>
 " Keep the content of left side, abort right side
-nmap <leader>Gh :diffget //2<CR>
+nmap <leader>gh :diffget //2<CR>
 " Keep the content of right side, abort left side
-nmap <leader>Gl :diffget //3<CR>
+nmap <leader>gl :diffget //3<CR>
 
+"----------------------------------------------------------------------------
 "-------------------------------- Git Gutter --------------------------------
+"----------------------------------------------------------------------------
+
 "---------------- Settings ----------------
 highlight GitGutterAdd    guifg=#98C379 ctermfg=2
 highlight GitGutterChange guifg=#BBBB00 ctermfg=3
@@ -179,15 +203,18 @@ let g:gitgutter_highlight_lines = 0
 " let g:gitgutter_sign_modified_removed = 'ww'
 
 "---------------- Key bindings ----------------
-nmap ) <Plug>(GitGutterNextHunk)
-nmap ( <Plug>(GitGutterPrevHunk)
+nmap <leader>gj <Plug>(GitGutterNextHunk)
+nmap <leader>gk <Plug>(GitGutterPrevHunk)
 
+"------------------------------------------------------------------------------
 "-------------------------------- Multi-Curosr --------------------------------
-"---------------- Key bindings ----------------
+"------------------------------------------------------------------------------
+
+"---------------- Settings ----------------
 " Disable default key bindings
 let g:multi_cursor_use_default_mapping=0
 
-" New key bindings
+"---------------- Key bindings ----------------
 let g:multi_cursor_start_word_key      = '<A-d>'
 let g:multi_cursor_select_all_word_key = '<leader><A-d>'
 let g:multi_cursor_start_key           = 'g<A-d>'
@@ -197,7 +224,10 @@ let g:multi_cursor_prev_key            = '<A-u>'
 let g:multi_cursor_skip_key            = '<A-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
+"-------------------------------------------------------------------------------
 "-------------------------------- NERDCommenter --------------------------------
+"-------------------------------------------------------------------------------
+
 "---------------- Settings ----------------
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -221,10 +251,18 @@ let g:NERDToggleCheckAllLines = 1
 nmap <C-_> <Plug>NERDCommenterToggle
 vmap <C-_> <Plug>NERDCommenterToggle<CR>gv
 
+"----------------------------------------------------------------------------------
 "-------------------------------- Markdown Preview --------------------------------
+"----------------------------------------------------------------------------------
+
+"---------------- Key bindings ----------------
 nmap <F12> <Plug>MarkdownPreviewToggle
 
+"----------------------------------------------------------------------------
 "-------------------------------- Hexokinase --------------------------------
+"----------------------------------------------------------------------------
+
+"---------------- Settings ----------------
 " Style
 let g:Hexokinase_highlighters = ['backgroundfull']
 
