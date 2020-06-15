@@ -1,4 +1,23 @@
 "-------------------------------------------------------------------------
+"-------------------------------- OneDark Theme --------------------------------
+"-------------------------------------------------------------------------
+
+"---------------- Settings ----------------
+" highlight Comment cterm=italic gui=italic
+" let g:onedark_terminal_italics=1
+let g:onedark_hide_endofbuffer=1
+let g:onedark_termcolors=256
+
+syntax on
+colorscheme onedark
+
+" Checks if terminal has 24-bit color support
+if (has("termguicolors"))
+    set termguicolors
+    hi LineNr ctermbg=NONE guibg=NONE
+endif
+
+"-------------------------------------------------------------------------
 "-------------------------------- Airline --------------------------------
 "-------------------------------------------------------------------------
 
@@ -32,6 +51,8 @@ let g:syntastic_check_on_wq = 0
 "---------------------------------------------------------------------
 
 "---------------- Settings ----------------
+highlight Quote ctermbg=109 guifg=#83a598
+
 set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup "
 
 " Better display for messages 
