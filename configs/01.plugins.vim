@@ -19,6 +19,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/jsonc.vim'
 
 let g:coc_global_extensions = [
+            \ 'coc-vimlsp',
             \ 'coc-clangd',
             \ 'coc-cmake',
             \ 'coc-java',
@@ -88,17 +89,4 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'tpope/vim-repeat'
 
 call plug#end()
-
-"-------------------------------- QUICK SETTINGS --------------------------------
-" Fix colors
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum" 
-
-" Setting themes
-if (has("termguicolors"))
-    set termguicolors
-endif
-
-colorscheme onedark
-set background=dark
 
