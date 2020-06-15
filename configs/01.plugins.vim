@@ -88,5 +88,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 " Repeat plugin's mapping
 Plug 'tpope/vim-repeat'
 
+" Change the working directory to the project root 
+Plug 'airblade/vim-rooter'
+
 call plug#end()
 
