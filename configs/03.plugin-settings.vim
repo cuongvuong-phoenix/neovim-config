@@ -46,6 +46,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" Skip 'dartanalizer'
+let g:loaded_syntastic_dart_dartanalyzer_checker = 0
+
 "---------------------------------------------------------------------
 "-------------------------------- CoC --------------------------------
 "---------------------------------------------------------------------
@@ -117,12 +120,12 @@ nnoremap <silent> <leader>cr :<C-u>CocRestart<CR>
 nmap <leader>rn <Plug>(coc-rename)
 
 " Format selected text/lines
-nmap <leader>cf  <Plug>(coc-format-selected)
-vmap <leader>cf  <Plug>(coc-format-selected) 
+nmap <leader>cf <Plug>(coc-format-selected)
+vmap <leader>cf <Plug>(coc-format-selected) 
 
 " run code actions
-vmap <leader>ca  <Plug>(coc-codeaction-selected)
-nmap <leader>ca  <Plug>(coc-codeaction-selected)
+vmap <silent> ga <Plug>(coc-codeaction-selected)
+nmap <silent> ga <Plug>(coc-codeaction-selected)
 
 "--------------------------------------------------------------------------
 "-------------------------------- coc-json --------------------------------
@@ -302,4 +305,14 @@ let g:Hexokinase_optInPatterns = [
 " Disable file types 
 let g:Hexokinase_ftDisabled = []
 
+"----------------------------------------------------------------------
+"-------------------------------- Dart --------------------------------
+"----------------------------------------------------------------------
+
+"---------------- Settings ----------------
+let g:lsc_server_commands = {'dart': 'dart_language_server'}
+let g:lsc_enable_autocomplete = v:false
+
+"---------------- Key bindings ----------------
+let g:lsc_auto_map = v:false
 
