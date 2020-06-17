@@ -14,43 +14,6 @@ Plug 'scrooloose/syntastic'
 " " Intergrated with Tmux
 " Plug 'christoomey/vim-tmux-navigator'
 
-" Intellisense Engine (Conquer of Completion)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/jsonc.vim'
-
-let g:coc_global_extensions = [
-            \ 'coc-vimlsp',
-            \ 'coc-clangd',
-            \ 'coc-cmake',
-            \ 'coc-java',
-            \ 'coc-omnisharp',
-            \ 'coc-python',
-            \ 'coc-go',
-            \ 'coc-tsserver',
-            \ 'coc-json', 
-            \ 'coc-css',
-            \ 'coc-cssmodules',
-            \ 'coc-html',
-            \ 'coc-yaml',
-            \ 'coc-xml',
-            \ 'coc-sql',
-            \ 
-            \ 'coc-prettier', 
-            \ 'coc-eslint', 
-            \ 'coc-tailwindcss',
-            \ 'coc-vetur',
-            \ 'coc-angular',
-            \ 'coc-flutter',
-            \ 'coc-jest',
-            \
-            \ 'coc-explorer',
-            \ 'coc-snippets',
-            \ 'coc-pairs',
-            \ 'coc-highlight',
-            \ 'coc-tabnine',
-            \ 'coc-pyright',
-            \ ]
-
 "---------------- UTILITIES ----------------
 " Files finder
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -90,6 +53,48 @@ Plug 'tpope/vim-repeat'
 
 " Change the working directory to the project root 
 Plug 'airblade/vim-rooter'
+
+"---------------- Intellisense Engine ----------------
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/jsonc.vim'
+
+let g:coc_global_extensions = [
+            \ 'coc-vimlsp',
+            \ 'coc-clangd',
+            \ 'coc-cmake',
+            \ 'coc-java',
+            \ 'coc-omnisharp',
+            \ 'coc-python',
+            \ 'coc-go',
+            \ 'coc-tsserver',
+            \ 'coc-json', 
+            \ 'coc-css',
+            \ 'coc-cssmodules',
+            \ 'coc-html',
+            \ 'coc-yaml',
+            \ 'coc-xml',
+            \ 'coc-sql',
+            \ 
+            \ 'coc-prettier', 
+            \ 'coc-eslint', 
+            \ 'coc-tailwindcss',
+            \ 'coc-vetur',
+            \ 'coc-angular',
+            \ 'coc-flutter',
+            \ 'coc-jest',
+            \
+            \ 'coc-explorer',
+            \ 'coc-snippets',
+            \ 'coc-pairs',
+            \ 'coc-highlight',
+            \ 'coc-tabnine',
+            \ 'coc-pyright',
+            \ ]
+
+" Dart
+Plug 'dart-lang/dart-vim-plugin' 
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
 
 call plug#end()
 
