@@ -159,6 +159,7 @@ For more information & examples, go to [author's github](https://github.com/tpop
 | `Shift` + `r` | (_CoC Explorer_ is showing) | Refresh                                 | :white_check_mark: |
 | `q`           | (_CoC Explorer_ is showing) | Quit                                    | :white_check_mark: |
 | `Esc`         | (_CoC Explorer_ is showing) | Esc                                     | :white_check_mark: |
+| `t`           | (_CoC Explorer_ is showing) | Open selected file(s) in new tab(s)     | :white_check_mark: |
 | `h`           | (_CoC Explorer_ is showing) | Collapse folder                         | :white_check_mark: |
 | `l`           | (_CoC Explorer_ is showing) | Expand folder if possible, else open    | :white_check_mark: |
 | `r` → `h`     | (_CoC Explorer_ is showing) | Collapse recursively                    | :white_check_mark: |
@@ -167,14 +168,14 @@ For more information & examples, go to [author's github](https://github.com/tpop
 | `Enter`       | (_CoC Explorer_ is showing) | `cd` to folder is expandable, else open | :white_check_mark: |
 | `y`           | (_CoC Explorer_ is showing) | Copy file's path                        | :white_check_mark: |
 | `Shift` + `y` | (_CoC Explorer_ is showing) | Copy file's name                        | :white_check_mark: |
-| `c`           | (_CoC Explorer_ is showing) | Copy selected files                     | :white_check_mark: |
-| `x`           | (_CoC Explorer_ is showing) | Cut selected files                      | :white_check_mark: |
-| `p`           | (_CoC Explorer_ is showing) | Paste selected files                    | :white_check_mark: |
-| `d`           | (_CoC Explorer_ is showing) | Delete selected files (to trash)        | :white_check_mark: |
-| `Shift` + `d` | (_CoC Explorer_ is showing) | Delete selected files (forever)         | :white_check_mark: |
+| `c`           | (_CoC Explorer_ is showing) | Copy selected file(s)                   | :white_check_mark: |
+| `x`           | (_CoC Explorer_ is showing) | Cut selected file(s)                    | :white_check_mark: |
+| `p`           | (_CoC Explorer_ is showing) | Paste selected file(s)                  | :white_check_mark: |
+| `d`           | (_CoC Explorer_ is showing) | Delete selected file(s) (to trash)      | :white_check_mark: |
+| `Shift` + `d` | (_CoC Explorer_ is showing) | Delete selected file(s) (forever)       | :white_check_mark: |
 | `a`           | (_CoC Explorer_ is showing) | Add (create) new file                   | :white_check_mark: |
 | `Shift` + `a` | (_CoC Explorer_ is showing) | Add (create) new folder                 | :white_check_mark: |
-| `r`           | (_CoC Explorer_ is showing) | Rename selected file/folder             | :white_check_mark: |
-| `f`           | (_CoC Explorer_ is showing) | Search for files                        | :white_check_mark: |
-| `Shift` + `f` | (_CoC Explorer_ is showing) | Search for files recursively            | :white_check_mark: |
+| `r`           | (_CoC Explorer_ is showing) | Rename selected file(s)/folder(s)       | :white_check_mark: |
+| `f`           | (_CoC Explorer_ is showing) | Search for file(s)                      | :white_check_mark: |
+| `Shift` + `f` | (_CoC Explorer_ is showing) | Search for file(s) recursively          | :white_check_mark: |
 | `X`           | (_CoC Explorer_ is showing) | Execute System's command                | :white_check_mark: |
