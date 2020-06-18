@@ -6,14 +6,14 @@
 2.  [Customized Keyboard Shortcuts](#customized-keyboard-shortcuts)
     -   [Core](#core)
     -   [Plugins/Extensions](#pluginsextensions)
-        -   [fzf.vim](#fzf.vim)
+        -   [fzf.vim](#fzfvim)
         -   [vim-fugitive](#vim-fugitive)
         -   [vim-gitgutter](#vim-gitgutter)
         -   [vim-multiple-cursors](#vim-multiple-cursors)
         -   [nerdcommenter](#nerdcommenter)
         -   [vim-surround](#vim-surround)
-        -   [markdown-preview.nvim](#markdown-preview.nvim)
-        -   [coc.nvim](#coc.nvim)
+        -   [markdown-preview.nvim](#markdown-previewnvim)
+        -   [coc.nvim](#cocnvim)
         -   [coc-explorer](#coc-explorer)
 
 ## Installation
