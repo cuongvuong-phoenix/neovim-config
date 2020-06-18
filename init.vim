@@ -1,5 +1,5 @@
-"-------------------------------- Essentials --------------------------------
-for f in split(globpath("~/.config/nvim/essentials", "*.vim"), '\n')
+"-------------------------------- Core --------------------------------
+for f in split(globpath("~/.config/nvim/core", "*.vim"), '\n')
     execute "source" f
 endfor
 
