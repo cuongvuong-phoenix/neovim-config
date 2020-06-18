@@ -32,7 +32,7 @@
 
     // coc-explorer
     "explorer.width": 32,
-    "explorer.openAction.strategy": "tab",
+    "explorer.openAction.strategy": "select",
     "explorer.icon.enableNerdfont": true,
     "explorer.autoExpandOptions": [
         "uncompact",
