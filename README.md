@@ -75,7 +75,7 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | `leader` → `r` → `n` | Normal                           | Rename symbol                                          | :white_check_mark: |
 | `leader` → `c` → `r` | Normal                           | Restart **_CoC_**'s server                             | :white_check_mark: |
 | `leader` → `c` → `f` | Normal + Visual + Select         | Format selected region                                 | :heavy_check_mark: |
-| `leader` → `c` → `a` | Normal + Visual + Select         | Run selected codes's action for current file           | :heavy_check_mark: |
+| `g` → `a`            | Normal + Visual + Select         | Run selected codes's action for current file           | :heavy_check_mark: |
 
 #### [CoC Explorer](https://github.com/weirongxu/coc-explorer)
 
