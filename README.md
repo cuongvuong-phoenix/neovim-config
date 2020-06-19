@@ -1,20 +1,6 @@
 # NeoVim configurations
 
-## Table of contents
-
-1.  [Installation](#installation)
-2.  [Customized Keyboard Shortcuts](#customized-keyboard-shortcuts)
-    -   [Core](#core)
-    -   [Plugins/Extensions](#pluginsextensions)
-        -   [fzf.vim](#fzfvim)
-        -   [vim-fugitive](#vim-fugitive)
-        -   [vim-gitgutter](#vim-gitgutter)
-        -   [vim-multiple-cursors](#vim-multiple-cursors)
-        -   [nerdcommenter](#nerdcommenter)
-        -   [vim-surround](#vim-surround)
-        -   [markdown-preview.nvim](#markdown-previewnvim)
-        -   [coc.nvim](#cocnvim)
-        -   [coc-explorer](#coc-explorer)
+Core](#core) - [Plugins/Extensions](#pluginsextensions) - [fzf.vim](#fzfvim) - [vim-fugitive](#vim-fugitive) - [vim-gitgutter](#vim-gitgutter) - [vim-multiple-cursors](#vim-multiple-cursors) - [nerdcommenter](#nerdcommenter) - [vim-surround](#vim-surround) - [markdown-preview.nvim](#markdown-previewnvim) - [coc.nvim](#cocnvim) - [coc-explorer](#coc-explorer)
 
 ## Installation
 
@@ -54,10 +40,10 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | `Ctrl` + `j`   | Normal                   | Navigate to the _lower pane_               | :white_check_mark: |
 | `Ctrl` + `k`   | Normal                   | Navigate to the _upper pane_               | :white_check_mark: |
 | `Ctrl` + `l`   | Normal                   | Navigate to the _right pane_               | :white_check_mark: |
-| `Alt` + `h`    | _Essentials_             | Resize pane to the _left_                  | :white_check_mark: |
-| `Alt` + `j`    | _Essentials_             | Resize pane to the _lower side_            | :white_check_mark: |
-| `Alt` + `k`    | _Essentials_             | Resize pane to the _upper side_            | :white_check_mark: |
-| `Alt` + `l`    | _Essentials_             | Resize pane to the _right_                 | :white_check_mark: |
+| `Space` + `h`  | _Essentials_             | Resize pane to the _left_                  | :white_check_mark: |
+| `Space` + `j`  | _Essentials_             | Resize pane to the _lower side_            | :white_check_mark: |
+| `Space` + `k`  | _Essentials_             | Resize pane to the _upper side_            | :white_check_mark: |
+| `Space` + `l`  | _Essentials_             | Resize pane to the _right_                 | :white_check_mark: |
 | `t` → `l`      | Normal                   | Select _next tab_                          | :white_check_mark: |
 | `t` → `h`      | Normal                   | Select _previous tab_                      | :white_check_mark: |
 
