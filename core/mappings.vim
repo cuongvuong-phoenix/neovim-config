@@ -10,7 +10,7 @@ noremap <silent> <leader>n :set hlsearch!<CR>
 vnoremap < <gv
 vnoremap > >gv
 
-" Move lines
+" Move lines above/below
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 vnoremap <A-j> :m '>+1<CR>gv=gv
@@ -32,11 +32,11 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-W>k
 noremap <C-l> <C-w>l
 
-" Alt + hjkl to resize Pane
-nnoremap <A-j> :resize -2<CR>
-nnoremap <A-k> :resize +2<CR>
-nnoremap <A-h> :vertical resize -2<CR>
-nnoremap <A-l> :vertical resize +2<CR>
+" Space + hjkl to resize Pane
+nnoremap <leader>j :resize -2<CR>
+nnoremap <leader>k :resize +2<CR>
+nnoremap <leader>h :vertical resize -2<CR>
+nnoremap <leader>l :vertical resize +2<CR>
 
 " Navigate between Tabs
 nnoremap tl :tabnext<CR>
