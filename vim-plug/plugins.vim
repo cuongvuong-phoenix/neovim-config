@@ -96,5 +96,8 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
 
+" Golang
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+ 
 call plug#end()
 
