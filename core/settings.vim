@@ -53,5 +53,25 @@ set smartcase                   " Override the 'ignorecase' option if the search
 
 set timeoutlen=500              " Time in milliseconds to wait for a mapped sequence to complete. (default: 1000)
 
-set formatoptions-=cro          " Stop newline continution of comments.
+autocmd FileType * set fo-=t fo-=c fo-=r fo-=o      " Disable following format options:
+                                                    "   't' --> Auto wrap text using 'textwidth'.
+                                                    "   'c' --> Auto-wrap comments using 'textwidth'.
+                                                    "   'r' --> Auto insert current comment leader after hitting <Enter> in Insert mode.
+                                                    "   'o' --> Auto insert current comment leader after hitting 'o' or 'O' in Normal mode.
 
+" Triger `autoread` when files changes on disk
+" https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-file-opened-in-vim/383044#383044
+" Also prevent this autocmd from running when in the following modes:  
+"                       'c' --> command-line-editing.
+"                       'r', 'rm', 'r?' --> Hit-enter prompt, --more-- promp, :confirm query.
+"                       '!' --> shell or external command is executing.
+"                       't' --> terminal mode.
+" And only run when not in the command-line window.
+" https://vi.stackexchange.com/questions/13692/prevent-focusgained-autocmd-running-in-command-line-editing-mode
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
+        \ if mode() !~ '\v(c|r.?|!|t)' && getcmdwintype() == '' | checktime | endif
+
+" Notification after file change
+" https://vi.stackexchange.com/questions/13091/autocmd-event-for-autoread
+autocmd FileChangedShellPost *
+  \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
