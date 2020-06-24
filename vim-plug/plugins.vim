@@ -54,6 +54,9 @@ Plug 'tpope/vim-repeat'
 " Change the working directory to the project root 
 Plug 'airblade/vim-rooter'
 
+" Turn on FocusGained setting when inside tmux
+Plug 'tmux-plugins/vim-tmux-focus-events'
+
 "---------------- Intellisense Engine ----------------
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/jsonc.vim'
