@@ -44,6 +44,3 @@ nnoremap <Leader>fb :Buffers<CR>
 " Command history
 nnoremap <Leader>fh :History:<CR>
 
-" List of commands
-nnoremap <Leader>fc :Commands<CR>
-
