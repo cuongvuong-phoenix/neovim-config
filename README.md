@@ -30,7 +30,8 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | `>`            | Normal + Select          | Un-tab selected region                     | :white_check_mark: |
 | `Alt` + `j`    | Normal + Visual + Select | Move current/selected _region below_       | :white_check_mark: |
 | `Alt` + `k`    | Normal + Visual + Select | Move current/selected _region above_       | :white_check_mark: |
-| `Ctlr` + `s`   | Normal                   | Alternative way to save                    | :white_check_mark: |
+| `Ctlr` + `s`   | Normal                   | **_\| :w \|_** Alternative way to save     | :white_check_mark: |
+| `Ctlr` + `q`   | Normal                   | **_\| :q! \|_** Quit without saving        | :white_check_mark: |
 | `Ctlr` + `c`   | Visual + Select          | Copy selected region to system's clipboard | :white_check_mark: |
 | `Ctlr` + `x`   | Visual + Select          | Cut selected region to system's clipboard  | :white_check_mark: |
 | `'` + `"`      | _Essentials_             | Jump to position where last time quitted   | :white_check_mark: |

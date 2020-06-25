@@ -2,7 +2,8 @@
 syntax on                       " Enable syntax highlighting.
 
 set background=dark             " Adjusts the default color groups for dark type.
-	
+set t_Co=256	
+
 set number                      " Precede each line with its line number.
 set relativenumber              " Show the line number relative to the line with the cursor in front of each line.
 

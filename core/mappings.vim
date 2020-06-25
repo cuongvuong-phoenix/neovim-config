@@ -18,6 +18,7 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Common usual keys
 nnoremap <C-s> :w<CR>
+nnoremap <C-q> :q!<CR>
 vnoremap <C-c> "+y
 vnoremap <C-x> "+x
 noremap <C-v> "+gP
