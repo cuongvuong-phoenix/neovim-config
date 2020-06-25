@@ -64,15 +64,21 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 
 #### [vim-fugitive](https://github.com/tpope/vim-fugitive)
 
-| Key binding          | Mode (Condition)              | Command                             |    Recursived?     |
-| -------------------- | ----------------------------- | ----------------------------------- | :----------------: |
-| `leader` → `g` → `s` | Normal                        | Open `git status` by **_Fugitive_** | :heavy_check_mark: |
-| `g` → `q`            | (_Fugitive_ is running)       | Quit **_Fugitive_**                 | :white_check_mark: |
-| `s`                  | (_Fugitive_ git status mode)  | Mark file(s) as _Staged_            | :white_check_mark: |
-| `u`                  | (_Fugitive_ git status mode)  | Mark file(s) as _Unstaged_          | :white_check_mark: |
-| `d` → `v`            | (_Fugitive_ git status mode)  | Open files to solve conflicts       | :white_check_mark: |
-| `leader` → `g` → `h` | Normal (_Fugitive_ diff mode) | Keep contents of _left side_        | :heavy_check_mark: |
-| `leader` → `g` → `l` | Normal (_Fugitive_ diff mode) | Keep contents of _right side_       | :heavy_check_mark: |
+> _fugitive-object_: Fugitive objects are either work tree files or Git revisions as defined in the "SPECIFYING REVISIONS" section in the git-rev-parse man page.
+
+| Key binding          | Mode (Condition)                             | Command                                                                               |    Recursived?     |
+| -------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------- | :----------------: |
+| `leader` → `g` → `s` | Normal                                       | **\| :Gstatus \|** Open **_Git Status_** by **_Fugitive_**                            | :heavy_check_mark: |
+| `g` → `q`            | (_Fugitive_ is running)                      | Quit **_Fugitive_** _(:Git)_                                                          | :white_check_mark: |
+| `Enter`              | (_Git Status_ & cursor at _fugitive-object_) | **\| :Gedit: \|** Edit the selected _fugitive-object_                                 | :white_check_mark: |
+| `c` → `c`            | (_Git Status_)                               | **\| :Gcommit \|** Commit _Staged_ file(s)                                            | :white_check_mark: |
+| `s` → `Enter`        | (_Git Status_ & cursor at _'Push:'_ line)    | **\| :Git push ... \|** Push to remote in _'Push:'_ line                              | :white_check_mark: |
+| `s`                  | (_Git Status_ & cursor at _fugitive-object_) | Mark selected _fugitive-object_ as _Staged_                                           | :white_check_mark: |
+| `u`                  | (_Git Status_ & cursor at _fugitive-object_) | Mark selected _fugitive-object_ as _Unstaged_                                         | :white_check_mark: |
+| `d` → `v`            | (_Git Status_ & cursor at _fugitive-object_) | Perform _Git diff_ mode against the selected _fugitive-object_ & split _vertically_   | :white_check_mark: |
+| `d` → `s`            | (_Git Status_ & cursor at _fugitive-object_) | Perform _Git diff_ mode against the selected _fugitive-object_ & split _horizontally_ | :white_check_mark: |
+| `leader` → `g` → `h` | Normal (_Git diff_ mode)                     | Keep contents of the _left side_                                                      | :heavy_check_mark: |
+| `leader` → `g` → `l` | Normal (_Git diff_ mode)                     | Keep contents of the _right side_                                                     | :heavy_check_mark: |
 
 #### [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 
