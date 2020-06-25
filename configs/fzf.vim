@@ -35,7 +35,15 @@ command! -bang -nargs=* Rg
 
 
 "---------------- Key bindings ----------------
+" Files (runs $FZF_DEFAULT_COMMAND if defined)
 nnoremap <C-p> :Files<CR>
-nnoremap <Leader>b :Buffers<CR>
-nnoremap <Leader>h :History<CR>
+
+" Open buffers
+nnoremap <Leader>fb :Buffers<CR>
+
+" Command history
+nnoremap <Leader>fh :History:<CR>
+
+" List of commands
+nnoremap <Leader>fc :Commands<CR>
 

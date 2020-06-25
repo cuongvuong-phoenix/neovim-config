@@ -51,16 +51,17 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 
 #### [fzf.vim](https://github.com/junegunn/fzf.vim)
 
-| Key binding     | Mode (Condition)   | Command                                |    Recursived?     |
-| --------------- | ------------------ | -------------------------------------- | :----------------: |
-| `Ctrl` + `p`    | Normal             | Start **_FzF_** to find files/contents | :white_check_mark: |
-| `leader` → `b`  | Normal             | Show **_FzF_**'s buffers               | :white_check_mark: |
-| `leader` → `h`  | Normal             | Show **_FzF_**'s histories             | :white_check_mark: |
-| `Ctrl` + `t`    | (_FzF_ is running) | Open selected files as vim's tabs      | :white_check_mark: |
-| `Ctrl` + `j`    | (_FzF_ is running) | Navigate to _upper file_               | :white_check_mark: |
-| `Ctrl` + `k`    | (_FzF_ is running) | Navigate to _lower file_               | :white_check_mark: |
-| `Tab`           | (_FzF_ is running) | Multi-select _current file_            | :white_check_mark: |
-| `Shift` + `Tab` | (_FzF_ is running) | Cancel Multi-select of _current file_  | :white_check_mark: |
+| Key binding          | Mode (Condition)   | Command                                |    Recursived?     |
+| -------------------- | ------------------ | -------------------------------------- | :----------------: |
+| `Ctrl` + `p`         | Normal             | Start **_FzF_** to find files/contents | :white_check_mark: |
+| `leader` → `f` → `b` | Normal             | Show all buffers                       | :white_check_mark: |
+| `leader` → `f` → `h` | Normal             | Show command histories                 | :white_check_mark: |
+| `leader` → `f` → `c` | Normal             | Show list of commands                  | :white_check_mark: |
+| `Ctrl` + `t`         | (_FzF_ is running) | Open selected files as vim's tabs      | :white_check_mark: |
+| `Ctrl` + `j`         | (_FzF_ is running) | Navigate to _upper file_               | :white_check_mark: |
+| `Ctrl` + `k`         | (_FzF_ is running) | Navigate to _lower file_               | :white_check_mark: |
+| `Tab`                | (_FzF_ is running) | Multi-select _current file_            | :white_check_mark: |
+| `Shift` + `Tab`      | (_FzF_ is running) | Cancel Multi-select of _current file_  | :white_check_mark: |
 
 #### [vim-fugitive](https://github.com/tpope/vim-fugitive)
 
