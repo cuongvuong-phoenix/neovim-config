@@ -56,7 +56,6 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | `Ctrl` + `p`         | Normal             | Start **_FzF_** to find files/contents | :white_check_mark: |
 | `leader` → `f` → `b` | Normal             | Show all buffers                       | :white_check_mark: |
 | `leader` → `f` → `h` | Normal             | Show command histories                 | :white_check_mark: |
-| `leader` → `f` → `c` | Normal             | Show list of commands                  | :white_check_mark: |
 | `Ctrl` + `t`         | (_FzF_ is running) | Open selected files as vim's tabs      | :white_check_mark: |
 | `Ctrl` + `j`         | (_FzF_ is running) | Navigate to _upper file_               | :white_check_mark: |
 | `Ctrl` + `k`         | (_FzF_ is running) | Navigate to _lower file_               | :white_check_mark: |
@@ -74,8 +73,9 @@ git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HO
 | `Enter`              | (_Git Status_ & cursor at _fugitive-object_) | **\| :Gedit: \|** Edit the selected _fugitive-object_                                 | :white_check_mark: |
 | `c` → `c`            | (_Git Status_)                               | **\| :Gcommit \|** Commit _Staged_ file(s)                                            | :white_check_mark: |
 | `s` → `Enter`        | (_Git Status_ & cursor at _'Push:'_ line)    | **\| :Git push ... \|** Push to remote in _'Push:'_ line                              | :white_check_mark: |
-| `s`                  | (_Git Status_ & cursor at _fugitive-object_) | Mark selected _fugitive-object_ as _Staged_                                           | :white_check_mark: |
-| `u`                  | (_Git Status_ & cursor at _fugitive-object_) | Mark selected _fugitive-object_ as _Unstaged_                                         | :white_check_mark: |
+| `=`                  | (_Git Status_ & cursor at _fugitive-object_) | Toggle detailed changes of the selected _fugitive-object_                             | :white_check_mark: |
+| `s`                  | (_Git Status_ & cursor at _fugitive-object_) | Mark the selected _fugitive-object_ as _Staged_                                       | :white_check_mark: |
+| `u`                  | (_Git Status_ & cursor at _fugitive-object_) | Mark the selected _fugitive-object_ as _Unstaged_                                     | :white_check_mark: |
 | `d` → `v`            | (_Git Status_ & cursor at _fugitive-object_) | Perform _Git diff_ mode against the selected _fugitive-object_ & split _vertically_   | :white_check_mark: |
 | `d` → `s`            | (_Git Status_ & cursor at _fugitive-object_) | Perform _Git diff_ mode against the selected _fugitive-object_ & split _horizontally_ | :white_check_mark: |
 | `leader` → `g` → `h` | Normal (_Git diff_ mode)                     | Keep contents of the _left side_                                                      | :heavy_check_mark: |
@@ -140,6 +140,7 @@ For more information & examples, go to [author's github](https://github.com/tpop
 | `leader` → `c` → `r` | Normal                           | Restart **_CoC_**'s server                             | :white_check_mark: |
 | `leader` → `c` → `f` | Normal + Visual + Select         | Format selected region                                 | :heavy_check_mark: |
 | `g` → `a`            | Normal + Visual + Select         | Run selected codes's action for current file           | :heavy_check_mark: |
+| `leader` → `f` → `c` | Normal                           | Show list of **_Coc_**'s commands                      | :white_check_mark: |
 
 #### [coc-explorer](https://github.com/weirongxu/coc-explorer)
 
