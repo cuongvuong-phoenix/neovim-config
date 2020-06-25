@@ -68,7 +68,9 @@ nmap <leader>rn <Plug>(coc-rename)
 nmap <leader>cf <Plug>(coc-format-selected)
 vmap <leader>cf <Plug>(coc-format-selected) 
 
-" run code actions
+" Run code actions
 vmap <silent> ga <Plug>(coc-codeaction-selected)
 nmap <silent> ga <Plug>(coc-codeaction-selected)
 
+" List Coc's commands
+nnoremap <silent> <leader>fc :CocCommand<CR>
