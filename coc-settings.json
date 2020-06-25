@@ -103,4 +103,5 @@
 
     // coc-flutter
     "flutter.trace.server": "messages",
+    "flutter.openDevLogSplitCommand": "bot 6split"
 }
