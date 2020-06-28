@@ -98,7 +98,19 @@
 
     // coc-vetur
     "vetur.format.options.tabSize": 4,
-    "vetur.format.defaultFormatter.html": "prettier",
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "force-expand-multiline",
+            "print_width": 120
+        },
+        "prettyhtml": {
+            "printWidth": 120,
+            "singleQuote": false,
+            "wrapAttributes": false,
+            "sortAttributes": false
+        }
+    },
     "vetur.experimental.templateInterpolationService": true,
 
     // coc-flutter
