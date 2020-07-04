@@ -9,7 +9,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'sheerun/vim-polyglot' 
 
 " Syntax Checking
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 
 " " Intergrated with Tmux
 " Plug 'christoomey/vim-tmux-navigator'
@@ -90,10 +90,10 @@ let g:coc_global_extensions = [
             \ 'coc-snippets',
             \ 'coc-pairs',
             \ 'coc-highlight',
-            \ 'coc-tabnine',
             \ 'coc-pyright',
             \ ]
 
+            " \ 'coc-tabnine',
 " Dart
 Plug 'dart-lang/dart-vim-plugin' 
 Plug 'natebosch/vim-lsc'
