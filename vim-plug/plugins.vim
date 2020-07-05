@@ -11,9 +11,6 @@ Plug 'sheerun/vim-polyglot'
 " Syntax Checking
 " Plug 'scrooloose/syntastic'
 
-" " Intergrated with Tmux
-" Plug 'christoomey/vim-tmux-navigator'
-
 "---------------- UTILITIES ----------------
 " Files finder
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -38,7 +35,7 @@ Plug 'tpope/vim-obsession'
 " Change surround character
 Plug 'tpope/vim-surround'
 
-" " Reopen files at last edit position
+" Reopen files at last edit position
 " Plug 'farmergreg/vim-lastplace'
 
 " Color highlighting document text
@@ -56,6 +53,9 @@ Plug 'airblade/vim-rooter'
 
 " Turn on FocusGained setting when inside tmux
 Plug 'tmux-plugins/vim-tmux-focus-events'
+
+" " Intergrated with Tmux
+" Plug 'christoomey/vim-tmux-navigator'
 
 "---------------- Intellisense Engine ----------------
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -75,7 +75,6 @@ let g:coc_global_extensions = [
             \ 'coc-cssmodules',
             \ 'coc-html',
             \ 'coc-yaml',
-            \ 'coc-xml',
             \ 'coc-sql',
             \ 
             \ 'coc-prettier', 
@@ -92,8 +91,9 @@ let g:coc_global_extensions = [
             \ 'coc-highlight',
             \ 'coc-pyright',
             \ ]
-
+            " \ 'coc-xml',
             " \ 'coc-tabnine',
+
 " Dart
 Plug 'dart-lang/dart-vim-plugin' 
 Plug 'natebosch/vim-lsc'
