@@ -1,5 +1,6 @@
 {
     "suggest.noselect": false,
+    "coc.preferences.formatOnType": true,
     "coc.preferences.formatOnSaveFiletypes": [
         "javascript",
         "javascriptreact",
@@ -11,7 +12,8 @@
         "markdown",
         "css",
         "html",
-        "dart"
+        "dart",
+        "python"
     ],
     // Color highlight
     "highlight.colors.enable": false,
@@ -115,5 +117,15 @@
 
     // coc-flutter
     "flutter.trace.server": "messages",
-    "flutter.openDevLogSplitCommand": "bot 6split"
+    "flutter.openDevLogSplitCommand": "bot 6split",
+
+    // coc-python
+    "python.jediEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "black",
+    "python.formatting.blackArgs": ["--line-length=120"]
 }
