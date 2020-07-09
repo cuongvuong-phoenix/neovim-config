@@ -90,6 +90,7 @@ let g:coc_global_extensions = [
             \ 'coc-pairs',
             \ 'coc-highlight',
             \ 'coc-pyright',
+            \ 'coc-emmet',
             \ ]
             " \ 'coc-xml',
             " \ 'coc-tabnine',

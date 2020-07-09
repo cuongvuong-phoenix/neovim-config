@@ -127,5 +127,5 @@
     "python.linting.lintOnSave": true,
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "black",
-    "python.formatting.blackArgs": ["--line-length=120"]
+    "python.formatting.blackArgs": ["--line-length=120"],
 }
