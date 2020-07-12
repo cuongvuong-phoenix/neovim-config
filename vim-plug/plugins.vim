@@ -2,6 +2,7 @@ call plug#begin('~/.local/share/nvim/plugged/')
 "---------------- ESSENTIALS ----------------
 " Themes
 Plug 'joshdick/onedark.vim'
+Plug 'kaicataldo/material.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
