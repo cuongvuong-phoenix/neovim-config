@@ -76,7 +76,6 @@ let g:coc_global_extensions = [
             \ 'coc-cssmodules',
             \ 'coc-html',
             \ 'coc-yaml',
-            \ 'coc-sql',
             \ 
             \ 'coc-prettier', 
             \ 'coc-eslint', 
@@ -91,8 +90,9 @@ let g:coc_global_extensions = [
             \ 'coc-pairs',
             \ 'coc-highlight',
             \ 'coc-pyright',
-            \ 'coc-emmet',
             \ ]
+            " \ 'coc-emmet',
+            " \ 'coc-sql',
             " \ 'coc-xml',
             " \ 'coc-tabnine',
 
