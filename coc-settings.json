@@ -15,10 +15,53 @@
         "dart",
         "python"
     ],
-    // Color highlight
+    //---------------- Color highlight --------------------
     "highlight.colors.enable": false,
-    
-    // coc-explorer
+
+    //---------------- coc-prettier ----------------
+    "prettier.trailingComma": "es5",
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 120,
+    "prettier.singleQuote": false,
+    "prettier.arrowParens": "always",
+    "prettier.semi": true,
+    "prettier.bracketSpacing": true,
+
+    //---------------- coc-vetur ----------------
+    "html.autoClosingTags": true,
+
+    //---------------- coc-vetur ----------------
+    "vetur.format.options.tabSize": 4,
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "force-expand-multiline",
+            "print_width": 120
+        },
+        "prettyhtml": {
+            "printWidth": 120,
+            "singleQuote": false,
+            "wrapAttributes": false,
+            "sortAttributes": false
+        }
+    },
+    "vetur.experimental.templateInterpolationService": true,
+
+    //---------------- coc-flutter ----------------
+    "flutter.trace.server": "messages",
+    "flutter.openDevLogSplitCommand": "bot 6split",
+
+    //---------------- coc-python ----------------
+    "python.jediEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "black",
+    "python.formatting.blackArgs": ["--line-length=120"],
+
+    //---------------- coc-explorer ----------------
     "explorer.width": 32,
     "explorer.openAction.strategy": "select",
     "explorer.icon.enableNerdfont": true,
@@ -88,44 +131,4 @@
         // Others
         "X": "systemExecute"
     },
-
-    // coc-prettier
-    "prettier.trailingComma": "es5",
-    "prettier.tabWidth": 4,
-    "prettier.printWidth": 120,
-    "prettier.singleQuote": false,
-    "prettier.arrowParens": "always",
-    "prettier.semi": true,
-    "prettier.bracketSpacing": true,
-
-    // coc-vetur
-    "vetur.format.options.tabSize": 4,
-    "vetur.format.defaultFormatter.html": "js-beautify-html",
-    "vetur.format.defaultFormatterOptions": {
-        "js-beautify-html": {
-            "wrap_attributes": "force-expand-multiline",
-            "print_width": 120
-        },
-        "prettyhtml": {
-            "printWidth": 120,
-            "singleQuote": false,
-            "wrapAttributes": false,
-            "sortAttributes": false
-        }
-    },
-    "vetur.experimental.templateInterpolationService": true,
-
-    // coc-flutter
-    "flutter.trace.server": "messages",
-    "flutter.openDevLogSplitCommand": "bot 6split",
-
-    // coc-python
-    "python.jediEnabled": false,
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.lintOnSave": true,
-    "python.formatting.provider": "black",
-    "python.formatting.blackPath": "black",
-    "python.formatting.blackArgs": ["--line-length=120"],
 }
