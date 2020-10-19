@@ -20,6 +20,9 @@
     //---------------- Color highlight --------------------
     "highlight.colors.enable": false,
 
+    //---------------- coc-css ----------------
+    "css.validate": false,
+
     //---------------- coc-prettier ----------------
     "prettier.trailingComma": "es5",
     "prettier.tabWidth": 4,
