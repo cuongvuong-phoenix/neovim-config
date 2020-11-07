@@ -24,13 +24,11 @@
     "css.validate": false,
 
     //---------------- coc-prettier ----------------
-    "prettier.trailingComma": "es5",
-    "prettier.tabWidth": 4,
     "prettier.printWidth": 120,
+    "prettier.tabWidth": 2,
     "prettier.singleQuote": true,
-    "prettier.arrowParens": "always",
-    "prettier.semi": true,
-    "prettier.bracketSpacing": true,
+    "prettier.quoteProps": "consistent",
+    "prettier.trailingComma": "es5",
 
     //---------------- coc-vetur ----------------
     "html.autoClosingTags": true,
