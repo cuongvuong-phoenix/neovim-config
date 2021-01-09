@@ -69,6 +69,7 @@ let g:coc_global_extensions = [
             \ 'coc-java',
             \ 'coc-omnisharp',
             \ 'coc-python',
+            \ 'coc-rls',
             \ 'coc-go',
             \ 'coc-tsserver',
             \ 'coc-json', 
