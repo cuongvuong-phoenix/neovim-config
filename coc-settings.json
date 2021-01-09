@@ -56,6 +56,9 @@
     "flutter.trace.server": "messages",
     "flutter.openDevLogSplitCommand": "bot 6split",
 
+    //---------------- coc-rust-analyzer ----------------
+    "rust-analyzer.checkOnSave.command": "clippy",
+
     //---------------- coc-python ----------------
     "python.jediEnabled": false,
     "python.linting.enabled": true,
