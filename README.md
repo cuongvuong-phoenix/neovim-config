@@ -1,6 +1,16 @@
 # NeoVim configurations
 
-Core](#core) - [Plugins/Extensions](#pluginsextensions) - [fzf.vim](#fzfvim) - [vim-fugitive](#vim-fugitive) - [vim-gitgutter](#vim-gitgutter) - [vim-multiple-cursors](#vim-multiple-cursors) - [nerdcommenter](#nerdcommenter) - [vim-surround](#vim-surround) - [markdown-preview.nvim](#markdown-previewnvim) - [coc.nvim](#cocnvim) - [coc-explorer](#coc-explorer)
+- [Core](#core)
+- [Plugins/Extensions](#pluginsextensions)
+- [fzf.vim](#fzfvim)
+- [vim-fugitive](#vim-fugitive)
+- [vim-gitgutter](#vim-gitgutter)
+- [vim-multiple-cursors](#vim-multiple-cursors)
+- [nerdcommenter](#nerdcommenter)
+- [vim-surround](#vim-surround)
+- [markdown-preview.nvim](#markdown-previewnvim)
+- [coc.nvim](#cocnvim)
+- [coc-explorer](#coc-explorer)
 
 ## Installation
 
