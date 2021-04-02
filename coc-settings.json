@@ -53,7 +53,7 @@
     "vetur.experimental.templateInterpolationService": true,
 
     //---------------- coc-flutter ----------------
-    "flutter.trace.server": "messages",
+    "flutter.trace.server": "message",
     "flutter.openDevLogSplitCommand": "bot 6split",
 
     //---------------- coc-rust-analyzer ----------------
@@ -93,11 +93,11 @@
             "^.svn$",
             "^.hg$",
             "^CVS$",
-            "^.DS_store$",
+            "^.DS_store$"
             //"^node_modules$",
         ]
     },
-    "explorer.keyMappings": {
+    "explorer.keyMappings.global": {
         "i": false, // cancel default mapkey
 
         // Essentials
@@ -138,5 +138,5 @@
 
         // Others
         "X": "systemExecute"
-    },
+    }
 }
