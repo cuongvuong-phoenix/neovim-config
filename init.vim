@@ -4,7 +4,7 @@ for f in split(globpath("~/.config/nvim/core", "*.vim"), '\n')
 endfor
 
 "-------------------------------- Vim-plug --------------------------------
-source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/plugins/vim-plug.vim
 
 "-------------------------------- Themes --------------------------------
 source $HOME/.config/nvim/themes/onedark.vim
