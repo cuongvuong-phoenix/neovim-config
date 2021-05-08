@@ -2,7 +2,7 @@ call plug#begin('~/.local/share/nvim/plugged/')
 "---------------- ESSENTIALS ----------------
 " Themes.
 Plug 'joshdick/onedark.vim'
-Plug 'kaicataldo/material.vim'
+" Plug 'kaicataldo/material.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -97,11 +97,6 @@ let g:coc_global_extensions = [
             " \ 'coc-sql',
             " \ 'coc-xml',
             " \ 'coc-tabnine',
-
-" Dart.
-Plug 'dart-lang/dart-vim-plugin' 
-Plug 'natebosch/vim-lsc'
-Plug 'natebosch/vim-lsc-dart'
 
 " Golang.
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
