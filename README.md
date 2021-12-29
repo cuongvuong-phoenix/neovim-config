@@ -1,24 +1,21 @@
 # NeoVim configurations
 
-- [Core](#core)
-- [Plugins/Extensions](#pluginsextensions)
-- [fzf.vim](#fzfvim)
-- [vim-fugitive](#vim-fugitive)
-- [vim-gitgutter](#vim-gitgutter)
-- [vim-multiple-cursors](#vim-multiple-cursors)
-- [nerdcommenter](#nerdcommenter)
-- [vim-surround](#vim-surround)
-- [markdown-preview.nvim](#markdown-previewnvim)
-- [coc.nvim](#cocnvim)
-- [coc-explorer](#coc-explorer)
-
 ## Installation
 
-Clone the repository into `~/.config/nvim`
+1. Clone the repository into `~/.config/nvim`:
 
-```shell
-git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HOME/.config/nvim
-```
+   ```shell
+   git clone --depth=1 https://github.com/vuong-cuong-phoenix/neovim-config.git $HOME/.config/nvim
+   ```
+
+2. Install `vim-plug`:
+
+   ```shell
+   sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+   ```
+
+3. Open `nvim` and `:PlugInstall` to install all the plugins.
 
 ## Customized Keyboard Shortcuts
 
