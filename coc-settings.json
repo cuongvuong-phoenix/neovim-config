@@ -57,7 +57,7 @@
     "flutter.openDevLogSplitCommand": "bot 6split",
 
     //---------------- coc-rust-analyzer ----------------
-    "rust-analyzer.checkOnSave.command": "clippy",
+    "rust-analyzer.assist.importPrefix": "crate",
 
     //---------------- coc-python ----------------
     "python.jediEnabled": false,
