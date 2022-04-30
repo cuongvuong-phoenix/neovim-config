@@ -28,6 +28,8 @@ endfunction
 
 inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : (<SID>check_back_space() ? "\<Tab>" : coc#refresh())
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
 " Use <CR> to confirm completion, `<C-g>u` means break undo chain at current
 " position. Coc only does snippet and additional edit on confirm.
