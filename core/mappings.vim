@@ -4,7 +4,7 @@ noremap <Space> <Nop>
 let mapleader = "\<Space>"
 
 " Turn off hlsearch
-noremap <silent> <leader>n :set hlsearch!<CR> 
+noremap <silent> <leader>[ :set hlsearch!<CR> 
 
 " Easily tab when using > & <
 vnoremap < <gv

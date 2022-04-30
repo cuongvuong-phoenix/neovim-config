@@ -32,7 +32,7 @@
 | Key binding    | Mode                     | Command                                    |    Recursived?     |
 | -------------- | ------------------------ | ------------------------------------------ | :----------------: |
 | `Space`        | _Essentials_             | Vim's `leader` key                         | :white_check_mark: |
-| `leader` → `n` | Normal                   | Toggle `hlsearch`                          | :white_check_mark: |
+| `leader` → `[` | Normal                   | Toggle `hlsearch`                          | :white_check_mark: |
 | `<`            | Normal + Select          | Tab selected region                        | :white_check_mark: |
 | `>`            | Normal + Select          | Un-tab selected region                     | :white_check_mark: |
 | `Alt` + `j`    | Normal + Visual + Select | Move current/selected _region below_       | :white_check_mark: |
