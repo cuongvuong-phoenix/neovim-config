@@ -23,6 +23,8 @@ vnoremap <C-c> "+y
 vnoremap <C-x> "+x
 noremap <C-v> "+gP
 
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
 " Split panes
 nmap <leader>- :split<CR><C-w>w
 nmap <leader>_ :vsplit<CR><C-w>w
