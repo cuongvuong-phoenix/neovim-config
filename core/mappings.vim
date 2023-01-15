@@ -6,7 +6,11 @@ let mapleader = "\<Space>"
 " Turn off hlsearch
 noremap <silent> <leader>[ :set hlsearch!<CR> 
 
-" Easily tab when using > & <
+" Have j and k navigate visual lines rather than logical ones
+noremap <expr> j (v:count? 'j' : 'gj')
+noremap <expr> k (v:count? 'k' : 'gk')
+
+" Easy tabbing when using > & <
 vnoremap < <gv
 vnoremap > >gv
 
