@@ -16,7 +16,9 @@ noremap <expr> k (v:count? 'k' : 'gk')
 vnoremap <C-c> "+y
 vnoremap <C-x> "+x
 noremap <C-v> "+gP
-inoremap <C-v> <ESC>"+gPa
+" Need to insert an arbitrary character first and then visually select it to
+" work properly with `P`
+inoremap <C-v> %<ESC>v"+gPa
 
 " Find selected
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
