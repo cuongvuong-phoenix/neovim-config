@@ -25,7 +25,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 
 " Multiple cursors.
-Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " Comment area.
 Plug 'scrooloose/nerdcommenter'
