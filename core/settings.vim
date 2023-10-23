@@ -4,9 +4,12 @@ syntax on                       " Enable syntax highlighting.
 set background=dark             " Adjusts the default color groups for dark type.
 set t_Co=256	
 
+set cursorline                  " Highlight current line.
+
 set number                      " Precede each line with its line number.
 set relativenumber              " Show the line number relative to the line with the cursor in front of each line.
 
+set colorcolumn=120             " Highlight column 120th.
 set ruler                       " Show the line and column number of the cursor position, separated by a comma.
 	
 set cmdheight=2                 " Number of screen lines to use for the command-line.
